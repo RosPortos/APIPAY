@@ -1,0 +1,14 @@
+.title {
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.52px;
+    &.fz16 {
+        font-size: 16px;
+    }
+    &.fz18 {
+        font-size: 18px;
+    }
+    &.fz14 {
+        font-size: 14px;
+    }
+}

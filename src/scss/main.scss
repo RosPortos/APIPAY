@@ -6,5 +6,10 @@
 @import "global";
 
 // подключения компонентов страницы
-/* @import "./components/header"; */
+@import "./components/header-admin";
+@import "./components/burger";
+@import "./components/nav";
+@import "./components/title";
+@import "./components/static";
 
+@import "./components/media";

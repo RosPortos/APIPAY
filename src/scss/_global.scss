@@ -3,7 +3,7 @@
 }
 
 body {
-    background: #F4F9FE;
+    background-color: #f7f3f3;
 	&.scroll-hide {
 		overflow: hidden;
 	}
@@ -19,6 +19,15 @@ body {
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+}
+
+.page-body {
+    display: flex;
+}
+
+.page-content {
+    width: 100%;
+    padding: 25px 20px;
 }
 
 
