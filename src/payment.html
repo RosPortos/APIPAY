@@ -2,49 +2,118 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#111111">
-	<title>Admin</title>
-	<link rel="stylesheet" href="css/vendor.css">
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<div class="page">
-		@include('partials/header-personal.html')
+    <div class="page">
+        @include('partials/header-personal.html')
 
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__item">
-					<a href="#" class="nav__link nav__link--active">Статистика</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Транзакции</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Выводы</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Валюты</a>
-				</li>
-				<li class="nav__item">
-					<a href="#" class="nav__link">Пользователи</a>
-				</li>
-			</ul>
-		</nav>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Статистика</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Транзакции</a>
+                </li>
+                <li class="nav__item">
+                    <span class="nav__link nav__link--active">Выводы</span>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Создать</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">История</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link submenu__link--active">Масовые выплаты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Шаблоны</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Скидка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Валюты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Пользователи</a>
+                </li>
+            </ul>
+        </nav>
 
-		<div class="page-content">
-			<section class="payment-section">
+        <div class="page-content">
+            <section class="payment-section">
+                <div class="payment__text">
+                    <span class="payment__text-title">Платежи:</span>
+                    <span>всего 4</span>
+                    <span>на сумму 150 000 руб.</span>
+                </div>
 
-			</section>
-		</div>
+                <form class="payment-box" action="/">
+                    <div class="payment__top">
+                        <div class="payment__list payment__titles">
+                            <div class="payment__item payment__item1">Номер карты</div>
+                            <div class="payment__item payment__item2">Сумма </div>
+                            <div class="payment__item payment__item3">Примечание</div>
+                        </div>
+                        <div class="payment__list">
+                            <input class="payment__input payment__item1" type="text">
+                            <input class="payment__input payment__item2" type="text">
+                            <input class="payment__input payment__item3" type="text">
+                            <button class="payment__btn payment__btn--plus btn-hover"></button>
+                            <button class="payment__btn payment__btn--minus btn-hover"></button>
+                        </div>
+                        <div class="payment__list">
+                            <input class="payment__input payment__item1" type="text">
+                            <input class="payment__input payment__item2" type="text">
+                            <input class="payment__input payment__item3" type="text">
+                            <button class="payment__btn payment__btn--plus btn-hover"></button>
+                            <button class="payment__btn payment__btn--minus btn-hover"></button>
+                        </div>
+                        <div class="payment__list">
+                            <input class="payment__input payment__item1" type="text">
+                            <input class="payment__input payment__item2" type="text">
+                            <input class="payment__input payment__item3" type="text">
+                            <button class="payment__btn payment__btn--plus btn-hover"></button>
+                            <button class="payment__btn payment__btn--minus btn-hover"></button>
+                        </div>
+                        <div class="payment__list">
+                            <input class="payment__input payment__item1" type="text">
+                            <input class="payment__input payment__item2" type="text">
+                            <input class="payment__input payment__item3" type="text">
+                            <button class="payment__btn payment__btn--plus btn-hover"></button>
+                            <button class="payment__btn payment__btn--minus btn-hover"></button>
+                        </div>
+                    </div>
+                    <div class="payment__bottom">
+                        <label class="checkbox-block">
+                            <input class="checkbox " type="checkbox">
+                            <span class="checkbox__text">Сохранить карты получателей в шаблоны</span>
+                        </label>
+                        <div class="payment-box__btn">
+                            <button class="payment__btn-big payment__btn--reset btn-hover" type="reset">Очистить</button>
+                            <button class="payment__btn-big payment__btn--submit btn-hover" type="submit">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
 
-	</div>
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
