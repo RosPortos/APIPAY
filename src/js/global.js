@@ -17,6 +17,7 @@ function closedClick(wrap, item) {
 }
 
 closedClick('.control__title', '.control__list');
+closedClick('.profile-main__btn', '.profile__content');
 
 
 $('.custum-check__input').on('click', function () { $(this).toggleClass('active'); });
