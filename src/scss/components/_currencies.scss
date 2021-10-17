@@ -1,3 +1,7 @@
+.currencies {
+    position: relative;
+}
+
 .currencies__top {
     display: flex;
     align-items: center;
@@ -12,23 +16,6 @@
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.4px;
-}
-
-.currencies__control {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-    position: relative;
-    padding-left: 28px;
-    margin-left: auto;
-    margin-right: 17px;
-    &::before {
-        position: absolute;
-        content: url('../img/preferences.png');
-        left: 0;
-        top: 0;
-    }
 }
 
 .search-block {

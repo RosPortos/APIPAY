@@ -63,14 +63,34 @@
         </nav>
 
         <div class="page-content">
+
             <section class="currencies">
                 <div class="currencies__top">
                     <h2 class="currencies__title title fz18">
                         Валюты
                         <span class="currencies__num">45</span>
                     </h2>
-                    <div class="currencies__control">
-                        Управление
+                    <div class="control">
+                        <div class="control__title">
+                            Управление
+                        </div>
+                        <div class="control__list">
+                            <button class="control__item change-reserve">
+                                Изменить резерв
+                            </button>
+                            <button class="control__item change-label">
+                                Изменить метку
+                            </button>
+                            <button class="control__item activate">
+                                Активировать
+                            </button>
+                            <button class="control__item deactivate">
+                                Деактивировать
+                            </button>
+                            <button class="control__item remove">
+                                Удалить
+                            </button>
+                        </div>
                     </div>
                     <form class="search-block">
                         <input type="text">
@@ -270,8 +290,90 @@
                         <button class="currencies__table--edit"></button>
                     </div>
                 </div>
+                <div class="modal-add">
+                    <div class="modal-add__title title fz12">
+                        Добавить направление обмена
+                    </div>
+                    <div class="tabs-wrapper tab-link-wrapper">
+                        <a class="tab tab-active" href="#tab-1">
+                            Обмен
+                        </a>
+                        <a class="tab" href="#tab-1">
+                            Парсер курса
+                        </a>
+                        <a class="tab" href="#tab-1">
+                            Поля
+                        </a>
+                        <a class="tab" href="#tab-1">
+                            Описание
+                        </a>
+                    </div>
+                    <div class="tabs-wrapper tab-content-wrapper">
+                        <form id="tab-1" class="tabs-content tabs-content-active">
+                            <div class="modal-add__input">
+                                <span>Отдаваемая валюта</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Получаемая валюта</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Тип верификации</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Тип минимальной суммы обмена</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Тип максимальной суммы обмена</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Тип дополнительной комиссии</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Способ расчета доп. комиссии</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Строка индификатора</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Курс отдаваемой валюты</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Сумма дополнительной комиссии</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Курс получаемой валюты</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Максимальная сумма обмена</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Максимальная сума обмена</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Мерчант обработки входящих платежей</span>
+                                <input type="text">
+                            </div>
+                            <div class="modal-add__input">
+                                <span>Мерчант обработки исходящих платежей</span>
+                                <input type="text">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
-
         </div>
 
     </div>

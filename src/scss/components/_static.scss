@@ -110,6 +110,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 30px;
+    .tab-content-wrapper {
+        margin-top: 15px;
+    }
+    .tab-link-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 17px;
+    }
 }
 
 .replenish__block {
@@ -123,19 +131,13 @@
     text-align: center;
 }
 
-.tab-link-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 17px;
-}
+
 
 .replenish__grid {
     overflow-x: auto;
 }
 
-.tab-content-wrapper {
-    margin-top: 15px;
-}
+
 
 .replenish__grid--row {
     padding: 10px;

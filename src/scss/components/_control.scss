@@ -1,0 +1,101 @@
+.control {
+    position: relative;
+    padding-left: 28px;
+    margin-left: auto;
+    margin-right: 17px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+        position: absolute;
+        content: url('../img/preferences.png');
+        left: 0;
+        top: 0;
+    }
+}
+
+.control__title {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.control__list {
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 2px 2px rgba(0, 1, 2, 0.06);
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+    padding: 0 9px;
+    z-index: 200;
+    top: 38px;
+    left: 0;
+    display: none;
+}
+
+.control__item {
+    padding: 13px 0;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding-left: 25px;
+    border-bottom: 1px solid #e8e8e8;
+    width: 100%;
+    text-align: left;
+    display: block;
+    position: relative;
+    &:hover {
+        text-shadow: 0.5px 0 0 currentColor;
+    }
+    &::before {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.change-min-sum {}
+
+.change-max-sum {}
+
+.change-reserve {
+    &::before {
+        content: url('../../img/change-reserve.svg');
+        top: 11px;
+    }
+}
+
+.change-label {
+    &::before {
+        content: url('../../img/change-label.svg');
+    }
+}
+
+.change-commission {}
+
+.change-verification {}
+
+.change-merchant {}
+
+.change-descr {}
+
+.change-field {}
+
+.activate {
+    &::before {
+        content: url('../../img/activate.svg');
+    }
+}
+
+.deactivate {
+    &::before {
+        content: url('../../img/deactivate.svg');
+    }
+}
+
+.remove {
+    &::before {
+        content: url('../../img/remove.svg');
+        left: 6px;
+    }
+}
