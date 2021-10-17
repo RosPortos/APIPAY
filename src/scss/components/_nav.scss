@@ -1,21 +1,17 @@
 .nav {
     min-width: 267px;
     width: 267px;
-    padding: 28px 23px;
+    padding: 10px 23px;
     border-right: 1px solid #e8e8e8;
     height: calc(100vh - 65px);
     background-color: #fff;
     position: fixed;
     top: 64px;
     z-index: 200;
-    
-}
-
-.nav__list {
     overflow-y: auto;
     @include scroll-hide;
-    height: 100%;
 }
+
 
 .nav__item {
     &:last-child {
@@ -34,6 +30,7 @@
     letter-spacing: 0.4px;
     border-bottom: 1px solid #f7f3f3;
     transition: all .3s;
+    cursor: pointer;
     &:hover {
         transform: translateX(5px);
         text-shadow: .5px 0 0 currentColor;
@@ -63,6 +60,7 @@
 .submenu {
     padding-left: 36px;
     margin-top: 10px;
+    display: none;
 }
 
 .submenu__item {

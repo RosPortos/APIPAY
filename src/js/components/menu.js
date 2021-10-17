@@ -4,4 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.burger, .nav ').toggleClass('active');
     });
 
+    $('.nav__link ').on('click', function () {
+        $(this).next().slideToggle(300);
+    });
+
 });
