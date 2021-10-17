@@ -34,7 +34,7 @@
                     <a href="#" class="nav__link">Пользователи</a>
                 </li>
                 <li class="nav__item">
-                    <a href="#" class="nav__link nav__link--active">Обмен валют</a>
+                    <span class="nav__link nav__link--active">Обмен валют</span>
                     <ul class="submenu">
                         <li class="submenu__item">
                             <a href="#" class="submenu__link">Заявки</a>
@@ -63,6 +63,61 @@
         </nav>
 
         <div class="page-content">
+
+            <section class="currencies">
+                <div class="currencies__top">
+                    <h2 class="currencies__title title fz18">
+                        Валюты
+                        <span class="currencies__num">45</span>
+                    </h2>
+                    <div class="currencies__control">
+                        Управление
+                    </div>
+                    <form class="search-block">
+                        <input type="text">
+                        <button class="search-block__btn">Найти</button>
+                    </form>
+                    <button class="currencies__btn-add"></button>
+                </div>
+                <div class="currencies__table">
+                    <div class="currencies__table--row row-title">
+                        <div class="currencies__table--checkbox">
+                            <input type="checkbox" class="checkbox">
+                        </div>
+                        <div class="currencies__table--name">
+                            Название
+                        </div>
+                        <div class="currencies__table--reserve">
+                            Резерв
+                        </div>
+                        <div class="currencies__table--requisites">
+                            Платежные реквизиты
+                        </div>
+                    </div>
+                    <div class="currencies__table--row">
+                        <div class="currencies__table--checkbox">
+                            <input type="checkbox" class="checkbox">
+                        </div>
+                        <div class="currencies__table--name">
+                            <span>
+                                <img loading="lazy" src="img/privat.png" alt="img">
+                                Privat24 UAH
+                            </span>
+                            <span>
+                                <img loading="lazy" src="img/folder.png" alt="img">
+                                ESP
+                            </span>
+                        </div>
+                        <div class="currencies__table--reserve">
+                            140 000 грн.
+                        </div>
+                        <div class="currencies__table--requisites">
+                            Нет данных для просмотра
+                        </div>
+                        <button class="currencies__table--edit"></button>
+                    </div>
+                </div>
+            </section>
 
         </div>
 
