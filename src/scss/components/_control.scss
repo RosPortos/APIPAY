@@ -60,14 +60,14 @@
 
 .change-reserve {
     &::before {
-        content: url('../../img/change-reserve.svg');
+        content: url('../img/change-reserve.svg');
         top: 11px;
     }
 }
 
 .change-label {
     &::before {
-        content: url('../../img/change-label.svg');
+        content: url('../img/change-label.svg');
     }
 }
 
@@ -83,19 +83,19 @@
 
 .activate {
     &::before {
-        content: url('../../img/activate.svg');
+        content: url('../img/activate.svg');
     }
 }
 
 .deactivate {
     &::before {
-        content: url('../../img/deactivate.svg');
+        content: url('../img/deactivate.svg');
     }
 }
 
 .remove {
     &::before {
-        content: url('../../img/remove.svg');
+        content: url('../img/remove.svg');
         left: 6px;
     }
 }
