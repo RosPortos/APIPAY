@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
 }
 
 .header-admin__left {
@@ -24,9 +25,11 @@
     color: #fff;
     padding-left: 50px;
     position: relative;
+
     &:hover {
         color: #fff;
     }
+
     &::before {
         position: absolute;
         content: url('../img/header__logo.svg');
@@ -43,13 +46,14 @@
     width: 100%;
     width: 85%;
     padding: 0 26px;
-    background-color: #fff;
+
     >span {
         color: #222332;
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 0.45px;
     }
+
     img {
         width: 31px;
         height: 31px;
@@ -59,6 +63,7 @@
 
 .header-admin__static--date {
     text-align: center;
+
     span {
         color: #222332;
         font-size: 16px;
@@ -67,10 +72,10 @@
         border-radius: 2px;
         background-color: #f8f8f8;
         padding: 0 4px;
+
         &:nth-child(2) {
             background-color: transparent;
             padding: 0 2px 0 5px;
         }
     }
 }
-

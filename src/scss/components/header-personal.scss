@@ -1,0 +1,121 @@
+.header-profile {
+    position: relative;
+    margin-right: 18px;
+}
+
+.profile-main__btn {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-width: 196px;
+    height: 36px;
+
+    color: #060606;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.41px;
+
+    border-radius: 2px;
+    background-image: linear-gradient(37deg, rgba(245, 23, 64, 0.7) 0%, rgba(154, 14, 194, 0.7) 71%, rgba(151, 94, 255, 0.7) 100%);
+    cursor: pointer;
+
+    position: relative;
+
+    &::before {
+        content: '';
+
+        background-color: #fff;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        right: 2px;
+        bottom: 2px;
+        z-index: 1;
+    }
+}
+
+.profile__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.profile__icon1 {
+    width: 17px;
+    height: 19px;
+}
+
+.profile__text {
+    border-left: 2px solid #e8e8e8;
+    padding-left: 8px;
+    margin-left: 12px;
+    margin-right: 40px;
+}
+
+.profile__icon2 {
+    width: 21px;
+    height: 21px;
+}
+
+.profile__content {
+    display: flex;
+    flex-direction: column;
+    width: 196px;
+    padding: 20px 27px 20px 15px;
+
+    box-shadow: 0 1px 2px rgba(8, 3, 0, 0.07);
+    border-radius: 2px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    top: 59px;
+
+    transition: .3s ease-in-out;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.profile__btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0.38px;
+}
+
+.profile__icon3 {
+    width: 16px;
+    height: 16px;
+    margin-right: 9px;
+}
+
+.profile__btn-text {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #e8e8e8;
+    text-align: start;
+
+    &--one {
+        border: none;
+    }
+}
+
+.profile-hover {
+    transition: .3s ease-in-out;
+
+    &:hover {
+        opacity: .6;
+    }
+}
