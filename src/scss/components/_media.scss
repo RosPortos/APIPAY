@@ -16,6 +16,9 @@
         min-width: 201px;
         width: 200px;
     }
+    .page-content {
+        padding-left: 220px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -26,6 +29,8 @@
         top: 56px;
         transition: all .3s;
         width: 70%;
+        padding: 10px 20px;
+        height: 100vh;
         &.active {
             transform: translateX(0);
         }
@@ -64,6 +69,12 @@
     }
     .page-content {
         padding: 25px 15px;
+    }
+    .header-admin__static {
+        height: inherit;
+    }
+    .header-admin {
+        border-bottom: none;
     }
 
 }
