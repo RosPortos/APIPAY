@@ -7,15 +7,16 @@
 
 // подключения компонентов страницы
 @import "./components/header-admin";
-@import "./components/header-personal";
 @import "./components/burger";
 @import "./components/nav";
 @import "./components/title";
 @import "./components/static";
 @import "./components/currencies";
-@import "./components/pagination";
+
+@import "./components/header-personal";
 @import "./components/output";
 @import "./components/list";
 @import "./components/filter";
+@import "./components/pagination";
 
 @import "./components/media";
