@@ -29,4 +29,36 @@ body {
     padding-top: 85px;
 }
 
+.checkbox-block {
+    .checkbox {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 19px;
+        height: 19px;
+        border-radius: 2px;
+        border: 1px solid #e8e8e8;
+        cursor: pointer;
+        position: relative;
+        transition: .1s ease-in;
+    }
+    .checkbox::before {
+        content: "🗸";
+        color: lightseagreen;
+        font-size: 18px;
+        position: absolute;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+        opacity: 0;
+        transition: .1s ease-in;
+    }
+    .checkbox:checked {
+        border: 1px solid #a0a0a0;
+    }
+    .checkbox:checked::before {
+        opacity: 1;
+    }
+}
+
 
