@@ -81,11 +81,32 @@ body {
     margin-left: 12px;
 }
 
+.gradi-btn {
+    background-image: linear-gradient(11deg, rgba(245, 23, 64, 0.89) 0%, rgba(154, 14, 194, 0.89) 71%, rgba(151, 94, 255, 0.89) 100%);
+    color: #ffffff;
+    border-radius: 2px;
+}
+
 .btn-hover {
     transition: .3s ease-in-out;
     will-change: transform;
-
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+.search-block {
+    display: flex;
+    align-items: center;
+    input {
+        height: 27px;
+        border-radius: 2px;
+        background-color: #ffffff;
+        color: #222332;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        padding: 0 10px;
+        border: none;
     }
 }
