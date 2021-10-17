@@ -15,6 +15,10 @@
     &::-webkit-scrollbar {
         height: 12px;
         background-color: #FFF;
+
+        @media(max-width:1023px) {
+         height: 6px;
+        }
     }
     &::-webkit-scrollbar-thumb {
         background: #696969;

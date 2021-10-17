@@ -1,4 +1,6 @@
 .nav {
+    display: flex;
+    flex-direction: column;
     min-width: 267px;
     width: 267px;
     padding: 10px 23px;
@@ -34,6 +36,11 @@
     &:hover {
         transform: translateX(5px);
         text-shadow: .5px 0 0 currentColor;
+    }
+
+    &--bottom {
+        border: none;
+        margin-top: auto;
     }
 }
 

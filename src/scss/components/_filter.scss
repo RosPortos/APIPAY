@@ -1,8 +1,15 @@
 .filter-wrapper {
+    display: flex;
+    align-items: center;
+    
     color: #000000;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.3px;
+}
+
+.filter__text {
+    font-size: 14px;
 }
 
 .filter__label {

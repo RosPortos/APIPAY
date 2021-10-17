@@ -42,7 +42,7 @@ body {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        width: 19px;
+        min-width: 19px;
         height: 19px;
         border-radius: 2px;
         border: 1px solid #e8e8e8;
@@ -87,5 +87,16 @@ body {
 
     &:hover {
         transform: scale(1.1);
+    }
+}
+
+.btn-hover2 {
+    transition: .3s ease-in-out;
+    will-change: transform;
+
+    &:hover {
+        @media(min-width:1024px) {
+            transform: scale(1.05);
+        }
     }
 }

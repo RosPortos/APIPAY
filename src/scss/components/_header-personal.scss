@@ -116,6 +116,8 @@
     transition: .3s ease-in-out;
 
     &:hover {
-        opacity: .6;
+        @media(max-width:1023px) {
+            opacity: .6;
+        }
     }
 }

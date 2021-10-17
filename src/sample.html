@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header-personal.html')
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Статистика</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Транзакции</a>
+                </li>
+                <li class="nav__item">
+                    <span class="nav__link nav__link--active">Выводы</span>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Создать</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">История</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Масовые выплаты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link submenu__link--active">Шаблоны</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Скидка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Api</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Произвольный платеж</a>
+                </li>
+            </ul>
+            <a class="nav__link nav__link--bottom" href="#">Техническая поддержка</a>
+        </nav>
+
+        <div class="page-content">
+            <section class="output-section">
+                <div class="output__top">
+                    <div class="filter-wrapper">
+                        <span class="filter__text">Шаблоны</span>
+                        <button class="sample__btn-big btn-hover2">Добавить шаблон</button>
+                        <form class="search-block sample__form">
+                            <input class="sample__input" type="text" placeholder="Значение...">
+                            <button class="search-block__btn btn-hover2">Найти</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="output__middle">
+                    <div class="list-wrapper">
+                        <div class="list list__titles">
+                            <div class="list__item sample__item1 list__title">
+                                ID
+                            </div>
+                            <div class="list__item sample__item2 list__title">
+                                Название шаблона
+                            </div>
+                            <div class="list__item sample__item3 list__title">
+                                Дата создания шаблона
+                            </div>
+                            <div class="list__item sample__item4 list__title">
+                                Количество карт
+                            </div>
+                            <div class="list__item sample__item5  list__title">
+                                Шаблон на сумму
+                            </div>
+                            <div class="list__item sample__item6 list__title">
+                                Действие
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item sample__item1 ">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item sample__item2 ">
+                                <span>cvc</span>
+                            </div>
+                            <div class="list__item sample__item3 ">
+                                <span>20.09.2021 18.00</span>
+                            </div>
+                            <div class="list__item sample__item4 ">
+                                <span>2</span>
+                            </div>
+                            <div class="list__item sample__item5 ">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item sample__item6 ">
+                                <button class="sample__btn">
+                                    <img src="img/change.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/exchange.png" alt="">
+                                </button>
+                                <button class="sample__btn">
+                                    <img src="img/delete.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
