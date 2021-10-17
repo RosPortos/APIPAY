@@ -1,0 +1,25 @@
+.filter-wrapper {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.filter__label {
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.filter__input {
+    display: none;
+
+    &:checked+.filter__value {
+        border-radius: 2px;
+        background-color: #8d097d;
+        color: #ffffff;
+    }
+}
+
+.filter__value {
+    padding: 3px 5px;
+}

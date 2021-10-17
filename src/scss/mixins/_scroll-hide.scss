@@ -6,3 +6,20 @@
         height: 0;
     }
 }
+
+@mixin list-scroll {
+    scrollbar-color: #222332 #fff;
+
+    &::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+    
+    &::-webkit-scrollbar {
+        height: 12px;
+        background-color: transparent;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: #696969;
+    }
+}

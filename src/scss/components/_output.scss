@@ -1,0 +1,15 @@
+.output-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.output__top {
+    margin-bottom: 18px;
+}
+
+
+.output__bottom {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
