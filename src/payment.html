@@ -14,7 +14,10 @@
 
 <body>
     <div class="page">
-        @include('partials/header-personal.html')
+        @include('partials/header-personal.html', {
+        "title": "Статистика",
+        "subtitle": "Статистика2",
+        })
 
         <nav class="nav">
             <ul class="nav__list">
@@ -104,8 +107,10 @@
                             <span class="checkbox__text">Сохранить карты получателей в шаблоны</span>
                         </label>
                         <div class="payment-box__btn">
-                            <button class="payment__btn-big payment__btn--reset btn-hover2" type="reset">Очистить</button>
-                            <button class="payment__btn-big payment__btn--submit btn-hover2" type="submit">Отправить</button>
+                            <button class="payment__btn-big payment__btn--reset btn-hover2"
+                                type="reset">Очистить</button>
+                            <button class="payment__btn-big payment__btn--submit btn-hover2"
+                                type="submit">Отправить</button>
                         </div>
                     </div>
                 </form>
