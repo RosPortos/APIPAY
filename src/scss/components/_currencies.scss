@@ -30,100 +30,12 @@
     margin-left: 17px;
 }
 
-.currencies__btn-add {
-    width: 35px;
-    height: 27px;
-    border-radius: 2px;
-    background-color: #00ad5d;
-    margin-left: 17px;
-    position: relative;
-    &::before {
-        position: absolute;
-        content: '+';
-        color: #ffffff;
-        font-size: 26px;
-        font-weight: 600;
-        letter-spacing: 0.65px;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -54%);
-    }
+.currencies__wrapper {
+    display: none;
 }
 
-.currencies__table {
-    margin-top: 17px;
-    border-radius: 2px;
-    background-color: #ffffff;
-}
-
-.currencies__table--row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 17px 144px 17px 67px;
-    position: relative;
-    &.row-title {
-        padding: 17px 144px 17px 67px;
-        background-color: #e8e8e852;
-    }
-}
-
-.currencies__table--checkbox {
-    height: 19px;
-    position: absolute;
-    left: 13px;
-}
-
-.currencies__table--name {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    width: 190px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    span {
-        display: flex;
-        align-items: center;
-        margin-right: 8px;
-        img {
-            padding-right: 8px;
-        }
-    }
-}
-
-.currencies__table--reserve {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    width: 100px;
-    text-align: center;
-}
-
-.currencies__table--requisites {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    width: 180px;
-    text-align: center;
-}
-
-.currencies__table--edit {
-    position: absolute;
-    right: 15px;
-    width: 21px;
-    height: 21px;
-    border-radius: 2px;
-    background-color: #f3f3f3;
-    &::before {
-        position: absolute;
-        content: url('../img/draw.png');
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+.direction__table {
+    .admin-table__row {
+        padding: 17px 160px 17px 110px;
     }
 }

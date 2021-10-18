@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header-admin.html', {
+        "title": "Обмен валют",
+        "subtitle": "Направления обмена",
+        })
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Статистика</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Транзакции</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Выводы</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Валюты</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Пользователи</a>
+                </li>
+                <li class="nav__item">
+                    <span class="nav__link nav__link--active">Обмен валют</span>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Заявки</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Пользователи</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link submenu__link--active">Направления обмена</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Валюты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Отзывы</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Партнерка</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Настройки</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="page-content">
+            <section class="currencies direction">
+                <div class="currencies__wrapper">
+                    <div class="currencies__top">
+                        <h2 class="direction__title title fz18">
+                            Направление обмена
+                            <span class="currencies__num">45</span>
+                        </h2>
+                        <div class="control">
+                            <div class="control__title">
+                                Управление
+                            </div>
+                            <div class="control__list">
+                                <button class="control__item change-min-sum">
+                                    Изменить мин. сумму
+                                </button>
+                                <button class="control__item change-max-sum">
+                                    Изменить макс. сумму
+                                </button>
+                                <button class="control__item change-commission">
+                                    Изменить доп. комиссию
+                                </button>
+                                <button class="control__item change-verification">
+                                    Изменить тип верификации
+                                </button>
+                                <button class="control__item change-merchant">
+                                    Изменить мерчант
+                                </button>
+                                <button class="control__item change-descr">
+                                    Изменить описание
+                                </button>
+                                <button class="control__item change-field">
+                                    Изменить поля
+                                </button>
+                                <button class="control__item activate">
+                                    Активировать
+                                </button>
+                                <button class="control__item deactivate">
+                                    Деактивировать
+                                </button>
+                                <button class="control__item remove">
+                                    Удалить
+                                </button>
+                            </div>
+                        </div>
+                        <form class="search-block">
+                            <input type="text">
+                            <button class="search-block__btn gradi-btn">Найти</button>
+                        </form>
+                        <button class="btn-add"></button>
+                    </div>
+                    <div class="admin-table direction__table">
+                        <div class="admin-table__row row-title">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                Дата регистрации
+                            </div>
+                            <div class="admin-table__two">
+                                Логин
+                            </div>
+                            <div class="admin-table__four">
+                                Электронная почта
+                            </div>
+                            <div class="admin-table__three">
+                                Баланс
+                            </div>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                <span>
+                                    <img loading="lazy" src="img/qiwi.png" alt="img">
+                                    QIWI РУБ
+                                </span>
+                            </div>
+                            <div class="admin-table__four">
+                                <span>25,355 грн.</span>
+                                <span>41 руб.</span>
+                            </div>
+                            <div class="admin-table__three">
+                                <span>25,355 грн.</span>
+                                <span>41 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-add">
+                    <button class="modal-add__closed"></button>
+                    <div class="modal-add__title title fz12">
+                        Добавить направление обмена
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
