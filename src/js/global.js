@@ -33,13 +33,16 @@ $('.modal-add__closed').on('click', function () {
     $('.currencies__wrapper').css('display', 'block');
 });
 
-const selectTop = $('.select__top'),
-    selectContent = $('.select__content'),
-    selectInput = $(".select__input:not(.select__input-two)"),
-    selectInputCard = $('.select__input-two');
+
 
 function select() {
+
+    const selectTop = $('.select__top'),
+        selectContent = $('.select__content'),
+        selectInput = $(".select__input");
+
     selectTop.on('click', function () {
+        hideSelect();
         $(this).toggleClass('active');
         $(this).parent().toggleClass('active');
         $(this).next(selectContent).slideToggle(300);
