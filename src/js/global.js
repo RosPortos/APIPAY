@@ -41,4 +41,3 @@ $('.modal-add__closed').on('click', function () {
 });
 
 
-
