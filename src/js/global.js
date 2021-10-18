@@ -40,30 +40,49 @@ $('.modal-add__closed').on('click', function () {
     $('.currencies__wrapper').css('display', 'block');
 });
 
-const selectTop = $('.select__top'),
-    selectContent = $('.select__content'),
-    selectInput = $(".select__input:not(.select__input-two)"),
-    selectInputCard = $('.select__input-two');
 
 function select() {
-    selectTop.on('click', function () {
-        $(this).toggleClass('active');
-        $(this).parent().toggleClass('active');
-        $(this).next(selectContent).slideToggle(300);
-    });
+    const selectTop = document.querySelectorAll(".select__top");
+    const selects = document.querySelectorAll(".select");
+    const selectContent = document.querySelectorAll(".select__content");
+    let selectInput = $(".select__input");
 
-    selectInput.on('click', function () {
-        let thisText = $(this).find('span').text();
-        let thisParent = $(this).parent();
-        let thisParentPrev = $(this).parent().prev();
-        thisParent.slideUp(300);
-        thisParentPrev.text(thisText).removeClass('active');
-    });
+    document.addEventListener('click', (e) => {
+        const target = e.target;
 
-    function hideSelect() {
-        selectContent.slideUp(300);
-        selectTop.removeClass('active');
-        selectTop.parent().removeClass('active');
-    }
+        if (target.classList.contains('select__top')) {
+            selectTop.forEach((item, i) => {
+
+                if (target == item) {
+
+                    item.classList.toggle('active');
+                    selects[i].classList.add('active');
+                    $(selectContent[i]).slideToggle(300);
+                }
+
+                if (target != item) {
+
+                    item.classList.remove('active');
+                    selects[i].classList.remove('active');
+                    $(selectContent[i]).slideUp(300);
+                }
+            })
+        } else {
+            selectTop.forEach((item, i) => {
+                item.classList.remove('active');
+                selects[i].classList.remove('active');
+                $(selectContent[i]).slideUp(300);
+            });
+        }
+
+        selectInput.on('click', function () {
+            let thisText = $(this).find('span').text();
+            let thisParent = $(this).parent();
+            let thisParentPrev = $(this).parent().prev();
+            thisParent.slideUp(300);
+            thisParentPrev.text(thisText).removeClass('active');
+        });
+    })
 }
+
 select();
