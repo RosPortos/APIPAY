@@ -22,6 +22,15 @@
     .page-content {
         padding-left: 220px;
     }
+
+    .sample-popup__inner {
+        width: calc(100vw - 42px);
+    }
+
+    .sample-popup__bottom {
+        padding: 20px 21px 28px 21px;
+    }
+    
 }
 
 @media (max-width: 940px) {
@@ -157,6 +166,21 @@
         width: 100%;
         text-align: left;
         margin-top: 8px;
+    }
+
+    .sample-popup__box {
+        flex-direction: column;
+    }
+
+    .sample-popup__item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .sample-popup__item1,
+    .sample-popup__item2,
+    .sample-popup__item3 {
+        width: 100%;
     }
 }
 
