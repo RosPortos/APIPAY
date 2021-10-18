@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header-personal.html', {
+        "title": "Вывод",
+        "subtitle": "Создать",
+        })
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Статистика</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Транзакции</a>
+                </li>
+                <li class="nav__item">
+                    <span class="nav__link nav__link--active">Выводы</span>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link submenu__link--active">Создать</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">История</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Масовые выплаты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Шаблоны</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Скидка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Api</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Произвольный платеж</a>
+                </li>
+            </ul>
+            <a class="nav__link nav__link--bottom" href="#">Техническая поддержка</a>
+        </nav>
+
+        <div class="page-content">
+            <section class="output-create">
+                <h2 class="output-create__title title fz18">Вывод</h2>
+                <form class="page-content__box" action="/">
+                    <div class="output-create__item">
+                        Способ оплаты
+                        <input class="payment__input output-create__input" name="payment" type="text">
+                    </div>
+                    <div class="output-create__item">
+                        Введите сумму вывода
+                        <input class="payment__input output-create__input" name="sum" type="text">
+                    </div>
+                    <div class="output-create__item">
+                        Куда вывести
+                        <input class="payment__input output-create__input" name="where" type="text">
+                    </div>
+                    <div class="output-create__item">
+                        Сумма с учетом комисии
+                        <input class="payment__input output-create__input" name="commission" type="text">
+                    </div>
+
+                    <button class="output-create__btn gradi-btn btn-hover2">Создать заявку</button>
+                </form>
+            </section>
+
+        </div>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

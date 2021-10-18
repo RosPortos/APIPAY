@@ -107,6 +107,17 @@ body {
     }
 }
 
+.btn-hover3 {
+    transition: .3s ease-in-out;
+    will-change: transform;
+
+    &:hover {
+        @media(min-width:1024px) {
+            transform: scale(1.2);
+        }
+    }
+}
+
 .search-block {
     display: flex;
     align-items: center;

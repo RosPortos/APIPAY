@@ -15,8 +15,8 @@
 <body>
 	<div class="page">
 		@include('partials/header-personal.html', {
-		"title": "Статистика",
-		"subtitle": "Статистика2",
+		"title": "Вывод",
+		"subtitle": "История",
 		})
 
 		<nav class="nav">
@@ -28,7 +28,24 @@
 					<a href="#" class="nav__link">Транзакции</a>
 				</li>
 				<li class="nav__item">
-					<a href="#" class="nav__link">Выводы</a>
+					<span class="nav__link nav__link--active">Выводы</span>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Создать</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link submenu__link--active">История</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Масовые выплаты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Шаблоны</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Скидка</a>
+                        </li>
+                    </ul>
 				</li>
 				<li class="nav__item">
 					<a href="#" class="nav__link">Api</a>
@@ -247,13 +264,13 @@
 				<li class="pagination__item active">
 					<span class="pagination__link">1</span>
 				</li>
-				<li class="pagination__item">
+				<li class="pagination__item btn-hover3">
 					<a class="pagination__link" href="#">2</a>
 				</li>
-				<li class="pagination__item">
+				<li class="pagination__item btn-hover3">
 					<a class="pagination__link" href="#">3</a>
 				</li>
-				<li class="pagination__item">
+				<li class="pagination__item btn-hover3">
 					<a class="pagination__link" href="#">4</a>
 				</li>
 			</ul>

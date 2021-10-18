@@ -2,23 +2,30 @@ $('.control__title').on('click', function () {
     $(this).next().slideToggle(300);
 });
 
+function slideUp(element) {
+    element.slideUp(300);
+}
 
-function closedClick(wrap, item) {
+function fadeOut(element) {
+    element.fadeOut(300);
+}
+
+function closedClick(wrap, item, method) {
 
     let wrapper = $(wrap),
         element = $(item);
 
     $(document).mouseup(function (e) {
-        if (!wrapper.is(e.target) && wrapper.has(e.target).length === 0) {
-            element.slideUp(300);
+        if (!wrapper.is(e.currentTarget) && wrapper.has(e.target).length === 0) {
             element.removeClass('active');
+            method(element);
         }
     });
 }
 
-closedClick('.control__title', '.control__list');
-closedClick('.profile-main__btn', '.profile__content');
-
+closedClick('.control__title', '.control__list', slideUp);
+closedClick('.header-profile', '.profile__content', slideUp);
+closedClick('.sample-popup__inner', '.sample-popup', fadeOut);
 
 $('.custum-check__input').on('click', function () { $(this).toggleClass('active'); });
 

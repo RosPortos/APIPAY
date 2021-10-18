@@ -1,0 +1,46 @@
+.output-create {
+    padding: 21px 34px 35px;
+    background-color: #fff;
+}
+
+.output-create__title {
+    padding-bottom: 27px;
+    margin-bottom: 22px;
+    text-align: center;
+
+    border-bottom: 1px solid rgba(#e8e8e8, .68);
+}
+
+.page-content__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 -25px;
+}
+
+.output-create__item {
+    width: 50%;
+    padding: 0 25px;
+    margin-bottom: 24px;
+
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.41px;
+}
+
+.output-create__input {
+    margin-top: 16px;
+}
+
+.output-create__btn {
+    width: 268px;
+    height: 49px;
+    margin: 0 auto;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.46px;
+}
