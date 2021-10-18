@@ -2,12 +2,12 @@ $('.control__title').on('click', function () {
     $(this).next().slideToggle(300);
 });
 
-function slideUp(element) {
-    element.slideUp(300);
+function slideUp(item) {
+    item.slideUp(300);
 }
 
-function fadeOut(element) {
-    element.fadeOut(300);
+function fadeOut(item) {
+    item.fadeOut(300);
 }
 
 function closedClick(wrap, item, method) {
@@ -42,31 +42,3 @@ $('.modal-add__closed').on('click', function () {
 
 
 
-function select() {
-
-    const selectTop = $('.select__top'),
-        selectContent = $('.select__content'),
-        selectInput = $(".select__input");
-
-    selectTop.on('click', function () {
-        hideSelect();
-        $(this).toggleClass('active');
-        $(this).parent().toggleClass('active');
-        $(this).next(selectContent).slideToggle(300);
-    });
-
-    selectInput.on('click', function () {
-        let thisText = $(this).find('span').text();
-        let thisParent = $(this).parent();
-        let thisParentPrev = $(this).parent().prev();
-        thisParent.slideUp(300);
-        thisParentPrev.text(thisText).removeClass('active');
-    });
-
-    function hideSelect() {
-        selectContent.slideUp(300);
-        selectTop.removeClass('active');
-        selectTop.parent().removeClass('active');
-    }
-}
-select();
