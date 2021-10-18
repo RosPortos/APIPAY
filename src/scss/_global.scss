@@ -134,3 +134,24 @@ body {
         border: none;
     }
 }
+
+.btn-add {
+    width: 35px;
+    height: 27px;
+    border-radius: 2px;
+    background-color: #00ad5d;
+    margin-left: 17px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: '+';
+        color: #ffffff;
+        font-size: 26px;
+        font-weight: 600;
+        letter-spacing: 0.65px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -54%);
+    }
+}

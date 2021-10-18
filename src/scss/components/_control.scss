@@ -22,7 +22,7 @@
 
 .control__list {
     position: absolute;
-    min-width: 160px;
+    min-width: 230px;
     box-shadow: 0 2px 2px rgba(0, 1, 2, 0.06);
     border: 1px solid #e8e8e8;
     background-color: #ffffff;
@@ -54,32 +54,76 @@
     }
 }
 
-.change-min-sum {}
+.change-min-sum {
+    &::before {
+        content: url('../img/change-min-sum.png');
+        top: 13px;
+        left: 4px;
+    }
+}
 
-.change-max-sum {}
+.change-max-sum {
+    &::before {
+        content: url('../img/change-max-sum.png');
+        top: 13px;
+        left: 4px;
+    }
+}
 
 .change-reserve {
     &::before {
         content: url('../img/change-reserve.svg');
-        top: 11px;
+        top: 14px;
+        left: 4px;
     }
 }
 
 .change-label {
     &::before {
         content: url('../img/change-label.svg');
+        
     }
 }
 
-.change-commission {}
+.change-commission {
+    &::before {
+        content: url('../img/change-commission.png');
+        top: 14px;
+        left: 4px;
+    }
+}
 
-.change-verification {}
+.change-verification {
+    &::before {
+        content: url('../img/change-verification.png');
+        top: 14px;
+        left: 4px;
+    }
+}
 
-.change-merchant {}
+.change-merchant {
+    &::before {
+        content: url('../img/change-merchant.png');
+        top: 14px;
+        left: 4px;
+    }
+}
 
-.change-descr {}
+.change-descr {
+    &::before {
+        content: url('../img/change-descr.png');
+        top: 14px;
+        left: 4px;
+    }
+}
 
-.change-field {}
+.change-field {
+    &::before {
+        content: url('../img/change-field.png');
+        top: 12px;
+        left: 4px;
+    }
+}
 
 .activate {
     &::before {
