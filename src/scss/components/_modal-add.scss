@@ -51,7 +51,7 @@
     margin-top: 17px;
     display: flex;
     flex-direction: column;
-    span:not(.select__item) {
+    span:not(.select__top-title, .select__item) {
         display: block;
         color: #000000;
         font-size: 14px;
