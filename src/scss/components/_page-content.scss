@@ -1,0 +1,75 @@
+.pc-profile__wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+
+.pc-profile__info {
+    display: flex;
+    align-items: center;
+    margin-left: 83px;
+
+    color: #222332;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+}
+
+.pc-profile__sum {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    color: #d0141c;
+}
+
+.pc-profile__precent {
+    display: inline-block;
+    width: 55px;
+    height: 26px;
+    margin-left: 5px;
+
+    color: #fff;
+    text-align: center;
+    line-height: 26px;
+}
+
+.pc-profile__form {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.41px;
+}
+
+.pc-profile__group {
+    margin-bottom: 12px;
+
+    &--password {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.pc-profile__password {
+    display: flex;
+    align-items: flex-end;
+}
+
+.pc-profile__input {
+    max-width: 369px;
+    margin-top: 10px;
+
+    &--password {
+        width: 290px;
+        margin-right: 0;
+    }
+}
+
+.pc-profile__password-title {
+    margin: 0 17px 10px;
+}
+
+.pc-profile__btn {
+    width: 188px;
+    height: 38px;
+    margin-top: 15px;
+}

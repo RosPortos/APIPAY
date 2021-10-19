@@ -5,19 +5,29 @@
     margin-top: 24px;
     text-align: center;
     width: fit-content;
+
     span {
         font-weight: 600;
         color: #000000;
         display: block;
+
         &:first-child {
             font-size: 14px;
             letter-spacing: 0.41px;
-        }  
+        }
+
         &:last-child {
             font-size: 24px;
             letter-spacing: 0.7px;
         }
     }
+}
+
+.static__subtitle {
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.38px;
 }
 
 .turn-system {
@@ -38,6 +48,7 @@
     align-items: center;
     padding: 7px 12px 7px 10px;
     margin-right: 10px;
+
     span {
         color: #000000;
         font-size: 13px;
@@ -63,6 +74,7 @@
 
 .chart__block {
     margin-top: 22px;
+
     img {
         max-width: 100%;
         max-height: 100%;
@@ -72,6 +84,7 @@
 
 .replenish {
     margin-top: 28px;
+
     .tab {
         padding: 15px;
         width: 49%;
@@ -81,6 +94,7 @@
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 0.35px;
+
         &::before {
             position: absolute;
             content: '';
@@ -93,11 +107,13 @@
             z-index: 1;
             transition: all .3s;
         }
+
         span {
             z-index: 2;
             position: relative;
         }
     }
+
     .tab-active {
         &::before {
             height: 100%;
@@ -110,9 +126,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 30px;
+
     .tab-content-wrapper {
         margin-top: 15px;
     }
+
     .tab-link-wrapper {
         display: flex;
         justify-content: space-between;
@@ -131,13 +149,10 @@
     text-align: center;
 }
 
-
-
 .replenish__grid {
     overflow-x: auto;
+    @include list-scroll;
 }
-
-
 
 .replenish__grid--row {
     padding: 10px;
@@ -145,9 +160,11 @@
     justify-content: space-between;
     border-bottom: 1px solid #e8e8e8;
     min-width: 290px;
+
     &:last-child {
         border-bottom: 0;
     }
+
     span {
         color: #000000;
         font-size: 12px;
@@ -158,9 +175,11 @@
 
 .status {
     width: 75px;
+
     &.done {
         color: #64af32;
     }
+
     &.pending {
         color: #d0a121;
     }

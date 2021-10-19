@@ -22,8 +22,22 @@
     width: 215px;
 }
 
+.arbitrary-payment__item2 {
+    max-width: 461px;
+    width: 100%;
+}
+
 .arbitrary-payment__input {
     margin-top: 18px;
+}
+
+.arbitrary-payment__input2 {
+    margin-top: 18px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.43px;
+    text-align: center;
 }
 
 .arbitrary-payment__btn {
@@ -31,22 +45,37 @@
     height: 38px;
 }
 
+.arbitrary-payment__btn2 {
+    width: 42px;
+    height: 38px;
+}
+
 .arbitrary-payment__list1 {
     min-width: 81px;
 }
+
 .arbitrary-payment__list2 {
     min-width: 88px;
 }
+
 .arbitrary-payment__list3 {
     min-width: 200px;
 }
+
 .arbitrary-payment__list4 {
     min-width: 350px;
 
 }
+
 .arbitrary-payment__list5 {
     min-width: 156px;
 }
+
 .arbitrary-payment__list6 {
     min-width: 100px;
+}
+
+.arbitrary-payment__select {
+    width: 318px;
+    margin-top: 18px;
 }
