@@ -66,7 +66,7 @@ function select() {
                     selects[i].classList.remove('active');
                     $(selectContent[i]).slideUp(300);
                 }
-            })
+            });
         } else {
             selectTop.forEach((item, i) => {
                 item.classList.remove('active');
@@ -82,7 +82,7 @@ function select() {
             thisParent.slideUp(300);
             thisParentPrev.text(thisText).removeClass('active');
         });
-    })
+    });
 }
 
 select();
