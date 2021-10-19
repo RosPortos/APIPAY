@@ -16,7 +16,7 @@
     <div class="page">
         @include('partials/header-admin.html', {
         "title": "Обмен валют",
-        "subtitle": "Направления обмена",
+        "subtitle": "Пользователи",
         })
         <nav class="nav">
             <ul class="nav__list">
@@ -65,39 +65,21 @@
         </nav>
 
         <div class="page-content">
-            <section class="currencies direction">
+            <section class="currencies user-page">
                 <div class="currencies__wrapper">
                     <div class="currencies__top">
-                        <h2 class="direction__title title fz18">
+                        <h2 class="user-page__title title fz18">
                             Направление обмена
                             <span class="currencies__num">45</span>
                         </h2>
-                        <div class="control">
+                        <div class="statistics">
+                            Статистика
+                        </div>
+                        <div class="control control-user">
                             <div class="control__title">
                                 Управление
                             </div>
                             <div class="control__list">
-                                <button class="control__item change-min-sum">
-                                    Изменить мин. сумму
-                                </button>
-                                <button class="control__item change-max-sum">
-                                    Изменить макс. сумму
-                                </button>
-                                <button class="control__item change-commission">
-                                    Изменить доп. комиссию
-                                </button>
-                                <button class="control__item change-verification">
-                                    Изменить тип верификации
-                                </button>
-                                <button class="control__item change-merchant">
-                                    Изменить мерчант
-                                </button>
-                                <button class="control__item change-descr">
-                                    Изменить описание
-                                </button>
-                                <button class="control__item change-field">
-                                    Изменить поля
-                                </button>
                                 <button class="control__item activate">
                                     Активировать
                                 </button>
@@ -113,9 +95,9 @@
                             <input type="text">
                             <button class="search-block__btn gradi-btn">Найти</button>
                         </form>
-                        <button class="btn-add"></button>
+                        <button class="btn-add btn-add-template"></button>
                     </div>
-                    <div class="admin-table direction__table">
+                    <div class="admin-table user__table">
                         <div class="admin-table__row row-title">
                             <div class="admin-table__checkbox checkbox-block">
                                 <input type="checkbox" class="checkbox">
@@ -141,32 +123,198 @@
                                 14.08.2021 14:55
                             </div>
                             <div class="admin-table__two">
-                                <span>
-                                    <img loading="lazy" src="img/qiwi.png" alt="img">
-                                    QIWI РУБ
-                                </span>
+                                Test626262
                             </div>
                             <div class="admin-table__four">
-                                <span>25,355 грн.</span>
-                                <span>41 руб.</span>
+                                Test2616@ukr.com
                             </div>
                             <div class="admin-table__three">
-                                <span>25,355 грн.</span>
-                                <span>41 руб.</span>
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
+                            </div>
+                            <button class="table-edit"></button>
+                        </div>
+                        <div class="admin-table__row">
+                            <div class="admin-table__checkbox checkbox-block">
+                                <input type="checkbox" class="checkbox">
+                            </div>
+                            <div class="admin-table__first">
+                                14.08.2021 14:55
+                            </div>
+                            <div class="admin-table__two">
+                                Test626262
+                            </div>
+                            <div class="admin-table__four">
+                                Test2616@ukr.com
+                            </div>
+                            <div class="admin-table__three">
+                                <span>15 441 грн.</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <span>112 362 руб.</span>
                             </div>
                             <button class="table-edit"></button>
                         </div>
                     </div>
                 </div>
-                <div class="modal-add">
-                    <button class="modal-add__closed"></button>
-                    <div class="modal-add__title title fz12">
-                        Добавить направление обмена
+                <form class="add-template">
+                    <div class="add-template__closed"></div>
+                    <div class="add-template__title title fz12">
+                        Добавить шаблон
                     </div>
-                </div>
+                    <div class="add-template__wrapper">
+                        <div class="add-template__input">
+                            <span>Логин</span>
+                            <input type="text">
+                        </div>
+                        <div class="add-template__input">
+                            <span>Пароль</span>
+                            <input type="text">
+                        </div>
+                        <div class="add-template__input">
+                            <span>Электронная почта</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <button class="add-template__btn btn-hover2 gradi-btn">
+                        Добавить
+                    </button>
+                </form>
             </section>
-
         </div>
+
+        <div class="overley"></div>
 
     </div>
     <script src="js/vendor.js"></script>

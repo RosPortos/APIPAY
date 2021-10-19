@@ -6,21 +6,42 @@
     .modal-add__bottom {
         width: 100%;
     }
+    .user__table {
+        .admin-table__row {
+            padding: 17px 60px 17px 30px;
+        }
+    }
+    .user-page-v2 .admin-table__row {
+        padding: 17px 20px 17px 20px;
+    }
+    .admin-trans .admin-table__row {
+        padding: 17px 15px 17px 15px;
+    }
+
 }
 
 @media (max-width: 1170px) {
     .replenish__block {
         width: 100%;
     }
-
     .currencies__top {
         flex-wrap: wrap;
-
         .search-block {
             width: 100%;
             order: 4;
             margin-top: 15px;
             margin-left: auto;
+        }
+    }
+    .user-page-v2 {
+        .search-block {
+            width: auto;
+            order: 2;
+            margin-top: 0;
+            margin-left: 0;
+        }
+        .create-account {
+            order: 3;
         }
     }
 }
@@ -189,6 +210,48 @@
             padding: 17px 60px 17px 60px;
         }
     }
+    .user-page {
+        .user-page__title {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .statistics {
+            margin-left: 0;
+        }
+    }
+    .add-template__wrapper {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .add-template__input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .add-template__input span {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    .user-page-v2 {
+        .search-block {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        .create-account {
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+    .user-page-v2 .search-block span {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .admin-trans__wrap {
+        flex-direction: column;
+    }
+    .admin-trans__wrap .filter-wrapper {
+        margin-left: 0;
+        margin: 20px 0 10px 0;
+    }
 }
 
 @media(max-width:574px) {
@@ -230,6 +293,18 @@
     .currencies__top {
         .control {
             margin-left: 0;
+        }
+    }
+    .user-page {
+        .control-user {
+            margin-left: 20px;
+        }
+    }
+    .admin-trans .search-block {
+        flex-wrap: wrap;
+        span {
+            width: 100%;
+            padding-bottom: 10px;
         }
     }
 }
@@ -290,5 +365,21 @@
     .modal-add__closed {
         right: 10px;
         top: 10px;
+    }
+    .user-page {
+        .statistics {
+            width: 100%;
+        }
+        .control-user {
+            margin-left: 0;
+            margin-top: 10px;
+        }
+    }
+    .admin-trans__filter {
+        justify-content: space-between;
+        .select-defolt {
+            width: 48%;
+            margin: 0 !important;
+        }
     }
 }

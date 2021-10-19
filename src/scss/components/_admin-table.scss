@@ -4,6 +4,14 @@
     background-color: #ffffff;
     overflow-x: auto;
     @include list-scroll;
+    &.user__table {
+        .admin-table__row {
+            min-width: 700px;
+        }
+        .admin-table__two {
+            width: 100px;
+        }
+    }
 }
 
 .admin-table__row {
@@ -13,9 +21,15 @@
     padding: 17px 144px 17px 67px;
     position: relative;
     min-width: 640px;
-
     &.row-title {
         background-color: #e8e8e852;
+        
+    }
+    div {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
     }
 }
 
@@ -26,21 +40,15 @@
 }
 
 .admin-table__first {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
     width: 190px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
-
     span {
         display: flex;
         align-items: center;
         margin-right: 8px;
-
         img {
             padding-right: 8px;
         }
@@ -48,19 +56,13 @@
 }
 
 .admin-table__two {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
     width: 200px;
     text-align: center;
     justify-content: center;
     display: flex;
-
     span {
         display: flex;
         align-items: center;
-
         img {
             margin-right: 7px;
         }
@@ -70,16 +72,11 @@
 
 
 .admin-table__three {
-    color: #000000;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.3px;
     width: 180px;
     text-align: center;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
     img {
         margin: 0 10px;
     }
@@ -92,7 +89,6 @@
     height: 21px;
     border-radius: 2px;
     background-color: #f3f3f3;
-
     &::before {
         position: absolute;
         content: url('../img/draw.png');
@@ -109,7 +105,6 @@
     height: 21px;
     border-radius: 2px;
     background-color: #f3f3f3;
-
     &::before {
         position: absolute;
         content: url('../img/link.png');

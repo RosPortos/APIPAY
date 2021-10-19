@@ -1,0 +1,62 @@
+.user-page-v2 {
+    .user-page__title {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .currencies__top {
+        flex-wrap: wrap;
+    }
+    .search-block {
+        span {
+            color: #222332;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.35px;
+            padding-right: 22px;
+        }
+    }
+    .create-account {
+        margin-left: auto;
+    }
+    .admin-table__row {
+        padding: 17px 54px 17px 14px;
+    }
+    .admin-table__first {
+        width: 50px;
+    }
+    .admin-table__two {
+        width: 200px !important;
+    }
+    .admin-table__three {
+        width: 110px;
+    }
+    .admin-table__four {
+        width: 150px;
+    }
+    .admin-table__five {
+        width: 100px;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        display: flex;
+        justify-content: center;
+    }
+    .on {
+        margin: 0 15px;
+    }
+    .user__table {
+        margin-bottom: 20px;
+    }
+}
+
+.create-account {
+    width: 187px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin-right: 9px;
+    }
+}

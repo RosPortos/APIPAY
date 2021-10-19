@@ -76,3 +76,27 @@
     display: block;
     
 }
+
+
+.select-defolt {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url('../img/arrow-select.png');
+        right: 10px;
+        top: 6px;
+        pointer-events: none;
+    }
+    select {
+        border-radius: 2px;
+        background-color: #ffffff;
+        padding: 8px 25px 8px 10px;
+        color: #000000;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+}

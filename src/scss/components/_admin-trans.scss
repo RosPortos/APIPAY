@@ -1,0 +1,82 @@
+.admin-trans {
+    .user-page__title {
+        width: 100%;
+    }
+    .currencies__top {
+        flex-wrap: wrap;
+    }
+    .search-block {
+        width: 100%;
+        margin-top: 18px;
+        span {
+            color: #222332;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.35px;
+            padding-right: 22px;
+        }
+    }
+    .select-defolt.all-type {
+        margin-left: 18px;
+    }
+    .select-defolt.cancellation {
+        margin-left: 18px;
+    }
+    .admin-table__row {
+        padding: 17px 32px 17px 15px;
+        min-width: 830px !important;
+    }
+    .admin-table__first {
+        width: 80px;
+    }
+    .admin-table__two {
+        width: 80px;
+    }
+    .admin-table__three {
+        width: 120px;
+    }
+    .admin-table__four {
+        width: 120px;
+        text-align: center;
+    }
+    .admin-table__five {
+        width: 40px;
+        text-align: center;
+    }
+    .admin-table__six {
+        width: 100px;
+        text-align: center;
+    }
+    .admin-table__seven {
+        width: 140px;
+        text-align: center;
+    }
+    .admin-table__eight {
+        width: 140px;
+        text-align: center;
+    }
+    .admin-table__nine {
+        width: 80px;
+        text-align: center;
+        &.green-text {
+            color: #64af32;
+        }
+    }
+    .user__table {
+        margin-bottom: 20px;
+    }
+}
+
+.admin-trans__wrap {
+    display: flex;
+    margin-top: 12px;
+    .filter-wrapper {
+        margin-left: auto;
+    }
+}
+
+.admin-trans__filter {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 18px;
+}

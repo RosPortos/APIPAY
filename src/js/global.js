@@ -30,7 +30,7 @@ closedClick('.sample-popup__inner', '.sample-popup', fadeOut);
 $('.custum-check__input').on('click', function () { $(this).toggleClass('active'); });
 
 
-$('.btn-add').on('click', function () {
+$('.btn-open').on('click', function () {
     $('.currencies__wrapper').css('display', 'none');
     $('.modal-add').css('display', 'block');
 });
@@ -79,6 +79,7 @@ function select() {
             let thisText = $(this).find('span').text();
             let thisParent = $(this).parent();
             let thisParentPrev = $(this).parent().prev();
+
             thisParent.slideUp(300);
             thisParentPrev.text(thisText).removeClass('active');
         });
@@ -86,3 +87,13 @@ function select() {
 }
 
 select();
+
+$('.btn-add-template, .create-account').on('click', function () {
+    $('.add-template').fadeIn(400);
+    $('.overley').fadeIn(400);
+});
+
+$('.add-template__closed, .overley').on('click', function () {
+    $('.add-template').fadeOut(400);
+    $('.overley').fadeOut(400);
+});
