@@ -2,318 +2,317 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="theme-color" content="#111111">
-	<title>Admin</title>
-	<link rel="stylesheet" href="css/vendor.css">
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-	<div class="page">
-		@include('partials/header-personal.html', {
-		"title": "Статистика",
-		"subtitle": "",
-		})
+    <div class="page">
+        @include('partials/header-admin.html', {
+        "title": "Статистика",
+        "subtitle": "",
+        })
 
-		<div class="page-body">
+        <div class="page-body">
 
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link nav__link--active">Статистика</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Транзакции</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Выводы</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Валюты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Пользователи</a></li>
-				</ul>
-			</nav>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--active">Статистика</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Транзакции</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Выводы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Валюты</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Пользователи</a></li>
+                </ul>
+            </nav>
 
-			<div class="page-content">
-				<section class="static">
-					<h2 class="static__title title fz18">
-						Статистика
-					</h2>
-					<p class="static__subtitle">сводная статистика</p>
-					<div class="static__pay-turn">
-						<span>Оборот платежей</span>
-						<span>452 666$</span>
-					</div>
-					<div class="turn-system">
-						<div class="turn-system__title title fz16">
-							Оборот платежей по платежным системам
-						</div>
-						<div class="turn-system__wrap">
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon.png" alt="img">
-								<span>85 400 грн.</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon2.png" alt="img">
-								<span>455 000 руб..</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon3.png" alt="img">
-								<span>0,151</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon4.png" alt="img">
-								<span>1,045</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon5.png" alt="img">
-								<span>1,255</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon6.png" alt="img">
-								<span>0,751</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon7.png" alt="img">
-								<span>0,355</span>
-							</div>
-							<div class="turn-system__item">
-								<img loading="lazy" src="img/turn-system__item--icon8.png" alt="img">
-								<span>1,001</span>
-							</div>
-						</div>
-					</div>
-					<div class="chart">
-						<div class="chart__title title fz18">
-							Транзакции
-							<span>история транзакций</span>
-						</div>
-						<div class="chart__block">
-							<img loading="lazy" src="img/chart.png" alt="img">
-						</div>
-					</div>
-					<div class="replenish">
-						<div class="replenish__wrapper">
-							<div class="replenish__block">
-								<div class="replenish__block--title title fz14">
-									Пополнение кошелька
-								</div>
-								<div class="tabs-wrapper tab-link-wrapper">
-									<a class="tab tab-active" href="#tab-1">
-										<span>Статусы транзакций</span>
-									</a>
-									<a class="tab" href="#tab-2">
-										<span>Неуспешные транзакции</span>
-									</a>
-								</div>
-								<div class="tabs-wrapper tab-content-wrapper">
-									<div id="tab-1" class="tabs-content tabs-content-active">
-										<div class="replenish__grid">
-											<div class="replenish__grid--row row-title">
-												<span class="status">Статус</span>
-												<span class="quality">Количество</span>
-												<span class="sum">Сумма</span>
-												<span class="percent">%</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-										</div>
-									</div>
-									<div id="tab-2" class="tabs-content">
-										<div class="replenish__grid">
-											<div class="replenish__grid--row row-title">
-												<span class="status">Статус</span>
-												<span class="quality">Количество</span>
-												<span class="sum">Сумма</span>
-												<span class="percent">%</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="replenish__block">
-								<div class="replenish__block--title title fz14">
-									Пополнение карты
-								</div>
-								<div class="tabs-wrapper tab-link-wrapper">
-									<a class="tab tab-active" href="#tab-3">
-										<span>Статусы транзакций</span>
-									</a>
-									<a class="tab" href="#tab-4">
-										<span>Неуспешные транзакции</span>
-									</a>
-								</div>
-								<div class="tabs-wrapper tab-content-wrapper">
-									<div id="tab-3" class="tabs-content tabs-content-active">
-										<div class="replenish__grid">
-											<div class="replenish__grid--row row-title">
-												<span class="status">Статус</span>
-												<span class="quality">Количество</span>
-												<span class="sum">Сумма</span>
-												<span class="percent">%</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-										</div>
-									</div>
-									<div id="tab-4" class="tabs-content">
-										<div class="replenish__grid">
-											<div class="replenish__grid--row row-title">
-												<span class="status">Статус</span>
-												<span class="quality">Количество</span>
-												<span class="sum">Сумма</span>
-												<span class="percent">%</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status pending">Ожидает</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-											<div class="replenish__grid--row">
-												<span class="status done">Выполнен</span>
-												<span class="quality">25</span>
-												<span class="sum">1452 руб.</span>
-												<span class="percent">1</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-			</div>
+            <div class="page-content">
+                <section class="static">
+                    <h2 class="static__title title fz18">
+                        Статистика
+                    </h2>
+                    <div class="static__pay-turn">
+                        <span>Оборот платежей</span>
+                        <span>452 666$</span>
+                    </div>
+                    <div class="turn-system">
+                        <div class="turn-system__title title fz16">
+                            Оборот платежей по платежным системам
+                        </div>
+                        <div class="turn-system__wrap">
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon.png" alt="img">
+                                <span>85 400 грн.</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon2.png" alt="img">
+                                <span>455 000 руб..</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon3.png" alt="img">
+                                <span>0,151</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon4.png" alt="img">
+                                <span>1,045</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon5.png" alt="img">
+                                <span>1,255</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon6.png" alt="img">
+                                <span>0,751</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon7.png" alt="img">
+                                <span>0,355</span>
+                            </div>
+                            <div class="turn-system__item">
+                                <img loading="lazy" src="img/turn-system__item--icon8.png" alt="img">
+                                <span>1,001</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="chart__title title fz18">
+                            Транзакции
+                            <span>история транзакций</span>
+                        </div>
+                        <div class="chart__block">
+                            <img loading="lazy" src="img/chart.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="replenish">
+                        <div class="replenish__wrapper">
+                            <div class="replenish__block">
+                                <div class="replenish__block--title title fz14">
+                                    Пополнение кошелька
+                                </div>
+                                <div class="tabs-wrapper tab-link-wrapper">
+                                    <a class="tab tab-active" href="#tab-1">
+                                        <span>Статусы транзакций</span>
+                                    </a>
+                                    <a class="tab" href="#tab-2">
+                                        <span>Неуспешные транзакции</span>
+                                    </a>
+                                </div>
+                                <div class="tabs-wrapper tab-content-wrapper">
+                                    <div id="tab-1" class="tabs-content tabs-content-active">
+                                        <div class="replenish__grid">
+                                            <div class="replenish__grid--row row-title">
+                                                <span class="status">Статус</span>
+                                                <span class="quality">Количество</span>
+                                                <span class="sum">Сумма</span>
+                                                <span class="percent">%</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-2" class="tabs-content">
+                                        <div class="replenish__grid">
+                                            <div class="replenish__grid--row row-title">
+                                                <span class="status">Статус</span>
+                                                <span class="quality">Количество</span>
+                                                <span class="sum">Сумма</span>
+                                                <span class="percent">%</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="replenish__block">
+                                <div class="replenish__block--title title fz14">
+                                    Пополнение карты
+                                </div>
+                                <div class="tabs-wrapper tab-link-wrapper">
+                                    <a class="tab tab-active" href="#tab-3">
+                                        <span>Статусы транзакций</span>
+                                    </a>
+                                    <a class="tab" href="#tab-4">
+                                        <span>Неуспешные транзакции</span>
+                                    </a>
+                                </div>
+                                <div class="tabs-wrapper tab-content-wrapper">
+                                    <div id="tab-3" class="tabs-content tabs-content-active">
+                                        <div class="replenish__grid">
+                                            <div class="replenish__grid--row row-title">
+                                                <span class="status">Статус</span>
+                                                <span class="quality">Количество</span>
+                                                <span class="sum">Сумма</span>
+                                                <span class="percent">%</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tab-4" class="tabs-content">
+                                        <div class="replenish__grid">
+                                            <div class="replenish__grid--row row-title">
+                                                <span class="status">Статус</span>
+                                                <span class="quality">Количество</span>
+                                                <span class="sum">Сумма</span>
+                                                <span class="percent">%</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status pending">Ожидает</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                            <div class="replenish__grid--row">
+                                                <span class="status done">Выполнен</span>
+                                                <span class="quality">25</span>
+                                                <span class="sum">1452 руб.</span>
+                                                <span class="percent">1</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
 
-		</div>
-	</div>
-	<script src="js/vendor.js"></script>
-	<script src="js/main.js"></script>
+        </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
