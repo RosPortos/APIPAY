@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header-personal.html', {
+        "title": "Вывод",
+        "subtitle": "Скидка",
+        })
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Статистика</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Транзакции</a>
+                </li>
+                <li class="nav__item">
+                    <span class="nav__link nav__link--active">Вывод</span>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Создать</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">История</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Масовые выплаты</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Шаблоны</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link submenu__link--active">Скидка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Api</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Произвольный платеж</a>
+                </li>
+            </ul>
+            <a class="nav__link nav__link--bottom" href="#">Техническая поддержка</a>
+        </nav>
+
+        <div class="page-content">
+            <section class="discount">
+                <h2 class="discount__title title fz18">Ваша скидка 0,1 %</h2>
+
+                <div class="list-wrapper discount__list">
+                    <div class="list list__titles">
+                        <div class="list__item discount__item1 list__title">
+                            Оборот
+                        </div>
+                        <div class="list__item discount__item2 list__title">
+                            $
+                        </div>
+                    </div>
+                    <div class="list discount__list">
+                        <div class="list__item discount__item1">
+                            <span>от 1000$ </span>
+                        </div>
+                        <div class="list__item discount__item2">
+                            <span>0.1%</span>
+                        </div>
+                    </div>
+                    <div class="list discount__list">
+                        <div class="list__item discount__item1">
+                            <span>от 10000$ </span>
+                        </div>
+                        <div class="list__item discount__item2">
+                            <span>0.2%</span>
+                        </div>
+                    </div>
+                    <div class="list discount__list">
+                        <div class="list__item discount__item1">
+                            <span>от 25000$ </span>
+                        </div>
+                        <div class="list__item discount__item2">
+                            <span>0.3%</span>
+                        </div>
+                    </div>
+                    <div class="list discount__list">
+                        <div class="list__item discount__item1">
+                            <span>от 100000$ </span>
+                        </div>
+                        <div class="list__item discount__item2">
+                            <span>0.4%</span>
+                        </div>
+                    </div>
+                    <div class="list discount__list">
+                        <div class="list__item discount__item1">
+                            <span>от 250000$ </span>
+                        </div>
+                        <div class="list__item discount__item2">
+                            <span>0.5%</span>
+                        </div>
+                    </div>
+                    <div class="list discount__list">
+                        <div class="list__item discount__item1">
+                            <span>от 1000000$ </span>
+                        </div>
+                        <div class="list__item discount__item2">
+                            <span>1%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

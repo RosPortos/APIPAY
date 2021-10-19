@@ -182,33 +182,120 @@
         min-width: 400px;
     }
 
+    .custum-check-v2 {
+        width: 100%;
+    }
+
+    .modal-add__bottom.mrg-left {
+        margin-top: 20px;
+    }
+
+    .modal-add__bottom {
+        padding: 10px;
+    }
+
+    .modal-add .tab-link-wrapper {
+        margin-top: 20px;
+    }
+
+    .input-wrap {
+        padding-bottom: 0;
+    }
+
+    .admin-table__row {
+        padding: 17px 60px 17px 60px;
+    }
+
+    .arbitrary-payment__item1 {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+
+    .arbitrary-payment__item {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+
     .arbitrary-payment__form {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+    }
 
-        .custum-check-v2 {
+    .arbitrary-payment__form {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .arbitrary-payment__item2 {
+        max-width: 100%;
+        padding-right: 17px;
+        margin-bottom: 0;
+    }
+
+    .arbitrary-payment__select {
+        width: 100%;
+    }
+
+    .arbitrary-payment__btn {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .pc-profile__wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .pc-profile__info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .pc-profile__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pc-profile__input {
+        margin-right: 0;
+
+        &--password {
             width: 100%;
         }
+    }
 
-        .modal-add__bottom.mrg-left {
-            margin-top: 20px;
-        }
+    .pc-profile__password {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 369px;
+        text-align: center;
+    }
 
-        .modal-add__bottom {
-            padding: 10px;
-        }
+    .pc-profile__password-title {
+        margin: 10px auto 0 auto;
+    }
 
-        .modal-add .tab-link-wrapper {
-            margin-top: 20px;
-        }
+    .pc-profile__password-main {
+        max-width: 369px;
+        width: 100%;
+        text-align: center;
+    }
 
-        .input-wrap {
-            padding-bottom: 0;
-        }
+    .pc-profile__btn {
+        display: block;
+        margin: 0 auto;
+    }
 
-        .admin-table__row {
-            padding: 17px 60px 17px 60px;
-        }
+    .pc-profile__info {
+        font-size: 14px;
     }
     .user-page {
         .user-page__title {
