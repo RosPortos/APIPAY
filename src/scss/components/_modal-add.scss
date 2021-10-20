@@ -3,6 +3,7 @@
     background-color: #fff;
     padding: 20px;
     display: none;
+    position: relative;
     .tab-link-wrapper {
         margin-top: 30px;
         display: flex;
@@ -210,6 +211,24 @@
     margin-left: auto;
     &:hover {
         transform: scale(1.05);
+    }
+}
+
+
+.modal-add-temp {
+    z-index: 300;
+    overflow-y: auto;
+    padding-top: 0;
+    .modal-add__template {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .modal-add__title {
+        padding: 20px;
+        margin: 0 -20px;
+        background-color: #e8e8e854;
+        font-size: 12px;
     }
 }
 

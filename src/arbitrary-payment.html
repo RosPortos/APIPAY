@@ -19,43 +19,18 @@
         "subtitle": "",
         })
 
-        <nav class="nav">
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Статистика</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Транзакции</a>
-                </li>
-                <li class="nav__item">
-                    <span class="nav__link">Выводы</span>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Создать</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">История</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Масовые выплаты</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Шаблоны</a>
-                        </li>
-                        <li class="submenu__item">
-                            <a href="#" class="submenu__link">Скидка</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link">Api</a>
-                </li>
-                <li class="nav__item">
-                    <a href="#" class="nav__link  nav__link--active">Произвольный платеж</a>
-                </li>
-            </ul>
-            <a class="nav__link nav__link--bottom" href="#">Техническая поддержка</a>
-        </nav>
+        @include('partials/pc-nav.html', {
+        "link1": "",
+        "link2": "",
+        "link3": "",
+        "sublink1": "",
+        "sublink2": "",
+        "sublink3": "",
+        "sublink4": "",
+        "sublink5": "",
+        "link4": "",
+        "link5": "nav__link--active",
+        })
 
         <div class="page-content">
             <section class="arbitrary-payment">

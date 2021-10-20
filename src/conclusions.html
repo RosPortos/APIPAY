@@ -15,97 +15,38 @@
 <body>
     <div class="page">
         @include('partials/header-admin.html', {
-        "title": "Транзакции",
-        "subtitle": "",
+        "title": "Обмен валют",
+        "subtitle": "Пользователи",
         })
 
-
-        @include('partials/pc-nav.html', {
-        "link1": "",
-        "link2": "nav__link--active",
-        "link3": "",
-        "sublink1": "",
-        "sublink2": "",
-        "sublink3": "",
-        "sublink4": "",
-        "sublink5": "",
-        "link4": "",
-        "link5": "",
+        @include('partials/admin-nav.html', {
+        "link-admin1": "",
+        "link-admin2": "",
+        "link-admin3": "nav__link--active",
+        "link-admin4": "",
+        "link-admin5": "",
+        "link-admin6": "",
+        "sublink-admin1": "",
+        "sublink-admin2": "",
+        "sublink-admin3": "",
+        "sublink-admin4": "",
+        "sublink-admin5": "",
+        "sublink-admin6": "",
+        "sublink-admin7": "",
         })
+
 
         <div class="page-content">
-            <section class="currencies admin-trans pc-trans">
+            <section class="currencies admin-trans">
                 <div class="currencies__wrapper">
                     <div class="currencies__top">
-                    </div>
-                    <div class="admin-trans__wrap">
-                        <div class="admin-trans__filter">
-                            <div class="select-defolt">
-                                <select>
-                                    <option value="">
-                                        Поле
-                                    </option>
-                                    <option value="">
-                                        Поле
-                                    </option>
-                                    <option value="">
-                                        Поле
-                                    </option>
-                                </select>
-                            </div>
-                            <form class="search-block">
-                                <input type="text" placeholder="Значения">
-                                <button class="search-block__btn gradi-btn">Найти</button>
-                            </form>
-                            <div class="select-defolt all-type">
-                                <select>
-                                    <option value="">
-                                        Все типы
-                                    </option>
-                                    <option value="">
-                                        Все типы
-                                    </option>
-                                    <option value="">
-                                        Все типы
-                                    </option>
-                                </select>
-                            </div>
-                            <div class="select-defolt cancellation">
-                                <select>
-                                    <option value="">
-                                        Отмена
-                                    </option>
-                                    <option value="">
-                                        Отмена
-                                    </option>
-                                    <option value="">
-                                        Отмена
-                                    </option>
-                                </select>
-                            </div>
-                        </div>
-                        <form class="filter-wrapper" action="/">
-                            <span class="filter__text">На странице:</span>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter" checked>
-                                <span class="filter__value">10</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">20</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">30</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">40</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">50</span>
-                            </label>
+                        <h2 class="user-page__title title fz18">
+                            Выводы
+                        </h2>
+                        <form class="search-block">
+                            <span>Найти запрос</span>
+                            <input type="text">
+                            <button class="search-block__btn gradi-btn">Найти</button>
                         </form>
                     </div>
                     <div class="admin-table user__table">
@@ -164,7 +105,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Новый
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -193,7 +134,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Новый
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -222,7 +163,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Новый
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -251,7 +192,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Новый
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -280,7 +221,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Завершен
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -309,7 +250,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Завершен
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -338,7 +279,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Завершен
                             </div>
                         </div>
                         <div class="admin-table__row">
@@ -367,7 +308,7 @@
                                 14 500 руб.
                             </div>
                             <div class="admin-table__nine green-text">
-                                Оплачен
+                                Завершен
                             </div>
                         </div>
                     </div>

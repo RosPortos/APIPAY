@@ -1,0 +1,75 @@
+.ref-prog {
+    border-radius: 2px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    overflow-x: auto;
+    @include list-scroll;
+}
+
+.ref-prog__col {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    min-width: 295px;
+}
+
+
+.ref-prog__col-title {
+    padding: 15px 15px;
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e8e82f;
+    position: relative;
+    button {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.ref-prog__col--input {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    input {
+        height: 33px;
+        border-radius: 2px;
+        border: 1px solid #e8e8e8;
+        width: 100%;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.35px;
+        padding: 0 17px;
+    }
+    button {
+        width: 35px;
+        height: 27px;
+        border-radius: 2px;
+        background-color: #e8e8e8;
+        position: relative;
+        margin-left: 10px;
+        &::before {
+            position: absolute;
+            content: url('../img/delete2.png');
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.btn-add {}
+
+.delete {}

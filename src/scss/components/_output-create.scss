@@ -7,7 +7,6 @@
     padding-bottom: 27px;
     margin-bottom: 22px;
     text-align: center;
-
     border-bottom: 1px solid rgba(#e8e8e8, .68);
 }
 
@@ -17,17 +16,28 @@
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 -25px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: rgba(#e8e8e8, .68);
+        bottom: 70px;
+    }
 }
 
 .output-create__item {
     width: 50%;
     padding: 0 25px;
     margin-bottom: 24px;
-
     color: #000000;
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.41px;
+    .select {
+        margin-top: 16px;
+    }
 }
 
 .output-create__input {
@@ -38,9 +48,9 @@
     width: 268px;
     height: 49px;
     margin: 0 auto;
-
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 0.46px;
+    margin-top: 30px;
 }

@@ -19,32 +19,33 @@
 		"subtitle": "",
 		})
 
-		<div class="page-body">
+		@include('partials/pc-nav.html', {
+		"link1": "nav__link--active",
+		"link2": "",
+		"link3": "",
+		"sublink1": "",
+		"sublink2": "",
+		"sublink3": "",
+		"sublink4": "",
+		"sublink5": "",
+		"link4": "",
+		"link4": "",
+		})
 
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#" class="nav__link nav__link--active">Статистика</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Транзакции</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Выводы</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Валюты</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Пользователи</a></li>
-				</ul>
-			</nav>
+
+
+		<div class="page-body">
 
 			<div class="page-content">
 				<section class="static">
+					<button class="reset">
+						<img loading="lazy" src="img/reset.png" alt="img">
+					</button>
 					<h2 class="static__title title fz18">
-						Статистика
+						Кошелек
 					</h2>
 					<p class="static__subtitle">сводная статистика</p>
-					<div class="static__pay-turn">
-						<span>Оборот платежей</span>
-						<span>452 666$</span>
-					</div>
 					<div class="turn-system">
-						<div class="turn-system__title title fz16">
-							Оборот платежей по платежным системам
-						</div>
 						<div class="turn-system__wrap">
 							<div class="turn-system__item">
 								<img loading="lazy" src="img/turn-system__item--icon.png" alt="img">
@@ -53,6 +54,10 @@
 							<div class="turn-system__item">
 								<img loading="lazy" src="img/turn-system__item--icon2.png" alt="img">
 								<span>455 000 руб..</span>
+							</div>
+							<div class="turn-system__item">
+								<img loading="lazy" src="img/turn-system__item--icon9.png" alt="img">
+								<span>15 000 руб.</span>
 							</div>
 							<div class="turn-system__item">
 								<img loading="lazy" src="img/turn-system__item--icon3.png" alt="img">

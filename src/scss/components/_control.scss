@@ -82,6 +82,22 @@
     }
 }
 
+.change-status {
+    &::before {
+        content: url('../img/change-status.png');
+        top: 14px;
+        left: 4px;
+    }
+}
+
+.block-ref {
+    &::before {
+        content: url('../img/block-ref.png');
+        top: 14px;
+        left: 4px;
+    }
+}
+
 .change-label {
     &::before {
         content: url('../img/change-label.svg');

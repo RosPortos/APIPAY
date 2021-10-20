@@ -30,14 +30,16 @@ closedClick('.sample-popup__inner', '.sample-popup', fadeOut);
 $('.custum-check__input').on('click', function () { $(this).toggleClass('active'); });
 
 
-$('.btn-open').on('click', function () {
-    $('.currencies__wrapper').css('display', 'none');
+$('.btn-open, .sample__btn-big').on('click', function () {
+    $('.currencies__wrapper, .output__middle').css('display', 'none');
     $('.modal-add').css('display', 'block');
+    $('.overley').fadeIn(400);
 });
 
-$('.modal-add__closed').on('click', function () {
+$('.modal-add__closed, .overley').on('click', function () {
     $('.modal-add').css('display', 'none');
-    $('.currencies__wrapper').css('display', 'block');
+    $('.currencies__wrapper, .output__middle').css('display', 'block');
+    $('.overley').fadeOut(400);
 });
 
 

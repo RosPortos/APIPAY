@@ -80,3 +80,24 @@
     flex-wrap: wrap;
     row-gap: 18px;
 }
+
+.pc-trans {
+    .search-block {
+        width: 148px;
+        margin: 0;
+        input {
+            width: 90px;
+            height: 100%;
+            color: #000000;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            &::placeholder {
+                color: #000000;
+            }
+        }
+        .search-block__btn {
+            margin-left: 0;
+        }
+    }
+}
