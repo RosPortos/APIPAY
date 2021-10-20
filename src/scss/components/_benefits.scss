@@ -1,6 +1,10 @@
+/* .benefits {
+    background-color: rgba(#e8e8e8, 1);
+}
+ */
 .benefits__title {
     max-width: 250px;
-    margin: 0 auto 46px;
+    margin: 0 auto 21px;
 }
 
 .benefits__list {
@@ -12,7 +16,8 @@
 .benefits__item {
     display: flex;
     align-items: flex-start;
-    width: 45%;
+    width: 46%;
+    margin: 25px 0px;
 }
 
 .benefits__num {
@@ -28,10 +33,16 @@
 }
 
 .benefits__info-title {
+    margin-bottom: 14px;
     color: #080808;
     font-family: Calibri;
     font-size: 24px;
     font-weight: 400;
 }
 
-.benefits__info-text {}
+.benefits__info-text {
+    color: #080808;
+    font-family: Calibri;
+    font-size: 18px;
+    font-weight: 400;
+}

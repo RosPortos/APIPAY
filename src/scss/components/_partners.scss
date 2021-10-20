@@ -1,0 +1,29 @@
+.partners {
+    margin-bottom: 19px;
+}
+
+.partners__inner {
+    background-color: #ffffff;
+    padding: 39px 35px 36px;
+}
+
+.partners__title {
+    max-width: 188px;
+    margin: 0 auto 33px;
+}
+
+.partners__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partners__item {
+    width: calc(100% / 6 - 8px);
+    padding: 21px 15px;
+    margin: 4px;
+
+    border-radius: 1px;
+    border: 1px solid rgba(34, 35, 50, 0.18);
+    background-color: #ffffff;
+}

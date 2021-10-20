@@ -44,6 +44,11 @@
 
 .select__top-icon {
     margin-right: 10px;
+    pointer-events: none;
+}
+
+.select__top-title {
+    pointer-events: none;
 }
 
 .select__content {
@@ -96,12 +101,13 @@
     letter-spacing: 0.41px;
     padding: 10px;
     display: block;
-    
+
 }
 
 
 .select-defolt {
     position: relative;
+
     &::before {
         position: absolute;
         content: url('../img/arrow-select.png');
@@ -109,6 +115,7 @@
         top: 6px;
         pointer-events: none;
     }
+
     select {
         border-radius: 2px;
         background-color: #ffffff;
