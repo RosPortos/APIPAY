@@ -26,6 +26,7 @@ function closedClick(wrap, item, method) {
 closedClick('.control__title', '.control__list', slideUp);
 closedClick('.header-profile', '.profile__content', slideUp);
 closedClick('.sample-popup__inner', '.sample-popup', fadeOut);
+closedClick('.popup', '.popup', fadeOut);
 
 $('.custum-check__input').on('click', function () { $(this).toggleClass('active'); });
 
