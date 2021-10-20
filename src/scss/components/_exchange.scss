@@ -117,12 +117,17 @@
 
     cursor: pointer;
 
+    color: #222332;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.46px;
+
     position: relative;
 
     &::before {
         content: '';
 
-        width: 285px;
+        width: 260px;
         border: 1px solid #c5c5c5;
         background-color: #e8e8e8;
         opacity: 0;
