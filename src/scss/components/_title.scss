@@ -2,16 +2,59 @@
     color: #000000;
     font-weight: 600;
     letter-spacing: 0.52px;
+
     &.fz16 {
         font-size: 16px;
     }
+
     &.fz18 {
         font-size: 18px;
     }
+
     &.fz14 {
         font-size: 14px;
     }
+
     &.fz14 {
         font-size: 12px;
+    }
+}
+
+.title-main {
+    text-align: center;
+    color: #080808;
+    font-family: "Calibri";
+    font-weight: 400;
+
+    &.fz27 {
+        font-size: 27px;
+    }
+
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+
+        width: 30px;
+        height: 5px;
+        background-image: linear-gradient(14deg, rgba(245, 23, 64, 0.65) 0% 100%);
+
+        top: 50%;
+        left: -44px;
+        transform: translateY(-50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        width: 30px;
+        height: 5px;
+        background-image: linear-gradient(14deg, rgba(154, 14, 194, 0.65) 71%, rgba(151, 94, 255, 0.65) 100%);
+
+        top: 50%;
+        right: -44px;
+        transform: translateY(-50%);
     }
 }

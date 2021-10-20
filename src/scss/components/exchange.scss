@@ -1,0 +1,161 @@
+.exchange {
+    margin-top: -405px;
+    margin-bottom: 48px;
+}
+
+.exchange__inner {
+    display: flex;
+    padding: 25px 35px 40px;
+
+    box-shadow: 0 2px 5px 1px rgba(8, 3, 0, 0.05);
+    border-radius: 2px;
+    background-color: #ffffff;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+
+        width: 1px;
+        height: 384px;
+        background-color: #222332;
+
+        left: 50%;
+        bottom: 35px;
+        transform: translateX(-50%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+
+        width: 60px;
+        height: 60px;
+
+        background-image: url(../img/brand/exchange.png);
+
+        left: 50%;
+        top: 25px;
+        transform: translateX(-50%);
+    }
+}
+
+.exchange__left {
+    width: 50%;
+    padding-right: 21px;
+}
+
+.exchange__right {
+    width: 50%;
+}
+
+.exchange__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 57px;
+
+    &--right {
+        margin-left: 21px;
+    }
+}
+
+.exchange__title {
+    margin-right: 28px;
+
+    color: #222332;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+.exchange__tabs {
+    display: flex;
+    align-items: center;
+}
+
+.exchange__tab {
+    margin: 0 2px;
+    padding: 8px;
+
+    border-radius: 13px;
+    cursor: pointer;
+
+    color: #222332;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.46px;
+
+    transition: .3s linear;
+
+    &.active {
+        color: #ffffff;
+        background-color: #d5116b;
+
+    }
+
+    &:hover {
+        @media(min-width:1023px) {
+            opacity: .7;
+        }
+    }
+}
+
+.exchange__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exchange__item {
+    display: flex;
+    align-items: center;
+    width: 46%;
+    height: 45px;
+    margin: 2px 0;
+
+    cursor: pointer;
+
+    position: relative;
+
+    &::before {
+        content: '';
+
+        width: 285px;
+        border: 1px solid #c5c5c5;
+        background-color: #e8e8e8;
+        opacity: 0;
+
+        transition: .2s linear;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+
+        &::before {
+            opacity: 0.12;
+        }
+    }
+
+    &.active {
+        text-decoration: underline;
+
+        &::before {
+            opacity: 0.12;
+        }
+    }
+}
+
+.exchange__img {
+    margin-right: 18px;
+}
+
+.exchange__right {
+    padding-left: 40px;
+}

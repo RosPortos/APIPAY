@@ -1,0 +1,37 @@
+.benefits__title {
+    max-width: 250px;
+    margin: 0 auto 46px;
+}
+
+.benefits__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.benefits__item {
+    display: flex;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.benefits__num {
+    margin-right: 11px;
+    min-width: 29px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.benefits__info {
+    padding-left: 21px;
+    border-left: 1px solid #a10175;
+}
+
+.benefits__info-title {
+    color: #080808;
+    font-family: Calibri;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.benefits__info-text {}

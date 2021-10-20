@@ -1,0 +1,141 @@
+.header {
+    height: 500px;
+    background-color: #222332;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 16px;
+
+    border-bottom: 1px solid #a10175;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+
+    font-family: "Play";
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.87px;
+    color: #fff;
+}
+
+.header__icon {
+    margin-right: 21px;
+}
+
+.header__nav {}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-item {
+    margin: 0 36px;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border: 2px solid #d5116b;
+
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        transform: translateY(-50%);
+    }
+}
+
+.header__nav-link {
+    color: #d7c8c8;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.45px;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: #d7c8c8;
+
+        position: absolute;
+        left: 0;
+        right: auto;
+        bottom: -3px;
+
+        transition: .3s linear;
+    }
+
+    &:hover {
+        color: #d7c8c8;
+
+        &::before {
+            width: 100%;
+        }
+    }
+}
+
+.header__btn {
+    width: 283px;
+    height: 42px;
+
+    box-shadow: 0 2px 5px 1px rgba(8, 3, 0, 0.23);
+    border-radius: 21px;
+    background-color: #a10175;
+    background-image: linear-gradient(16deg, rgba(245, 23, 64, 0.3) 0%, rgba(154, 14, 194, 0.3) 71%, rgba(151, 94, 255, 0.3) 100%);
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.46px;
+
+    position: relative;
+    z-index: 2;
+
+    &::before {
+        content: '';
+        width: 21px;
+        height: 21px;
+
+        background-image: url('../img/enter.png');
+
+        position: absolute;
+        top: 12px;
+        left: 28px;
+        z-index: 2;
+    }
+
+    &::after {
+        content: '';
+
+        box-shadow: 0 2px 5px 1px rgba(8, 3, 0, 0.23);
+        border-radius: 21px;
+        background-color: #a10175;
+        background-image: linear-gradient(16deg, rgba(245, 23, 64, 0.3) 0%, rgba(154, 14, 194, 0.3) 71%, rgba(151, 94, 255, 0.3) 100%);
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+
+        transition: .3s ease-in-out;
+    }
+
+    &:hover::after {
+        @media(min-width:1023px) {
+            transform: scale(1.05);
+        }
+    }
+}
