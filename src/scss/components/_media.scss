@@ -1,3 +1,9 @@
+@media(max-width:1270px) {
+    .partners__item {
+        width: calc(100% / 4 - 8px);
+    }
+}
+
 @media (max-width: 1250px) {
     .custum-check-v2 {
         width: 49%;
@@ -6,14 +12,17 @@
     .modal-add__bottom {
         width: 100%;
     }
+
     .user__table {
         .admin-table__row {
             padding: 17px 60px 17px 30px;
         }
     }
+
     .user-page-v2 .admin-table__row {
         padding: 17px 20px 17px 20px;
     }
+
     .admin-trans .admin-table__row {
         padding: 17px 15px 17px 15px;
     }
@@ -34,12 +43,77 @@
 
 }
 
+@media(max-width:1200px) {
+    .exchange__inner {
+        flex-direction: column;
+
+        &::before {
+            height: 1px;
+            width: auto;
+            top: 50%;
+            bottom: unset;
+            left: 10px;
+            right: 100px;
+            transform: translateY(-50%);
+        }
+
+        &::after {
+            left: unset;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            width: 40px;
+            height: 40px;
+            background-size: contain;
+        }
+    }
+
+    .exchange__left {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+
+    .exchange__item {
+        width: 260px;
+        padding-left: 15px;
+    }
+
+    .exchange__top {
+        margin-bottom: 25px;
+    }
+
+    .exchange__right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .exchange__top--right {
+        margin-left: 0;
+    }
+
+    .exchange__inner {
+        padding: 15px 15px 20px;
+    }
+
+    .exchange__title {
+        font-size: 18px;
+    }
+
+    .exchange__item {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1170px) {
     .replenish__block {
         width: 100%;
     }
+
     .currencies__top {
         flex-wrap: wrap;
+
         .search-block {
             width: 100%;
             order: 4;
@@ -47,6 +121,7 @@
             margin-left: auto;
         }
     }
+
     .user-page-v2 {
         .search-block {
             width: auto;
@@ -54,8 +129,40 @@
             margin-top: 0;
             margin-left: 0;
         }
+
         .create-account {
             order: 3;
+        }
+    }
+
+    .header__nav-link {
+        font-size: 14px;
+    }
+
+    .header__nav-item {
+        margin: 0 25px;
+    }
+
+    .header__logo {
+        font-size: 23px;
+    }
+
+    .header__icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .main__btn--header {
+        width: 233px;
+        height: 32px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 32px;
+
+        &::before {
+            top: 6px;
         }
     }
 }
@@ -90,6 +197,17 @@
 }
 
 @media (max-width: 940px) {
+    .header__inner {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        background-color: #222332;
+        padding: 15px;
+    }
+
     .nav {
         position: fixed;
         left: 0;
@@ -103,6 +221,51 @@
         &.active {
             transform: translateX(0);
         }
+    }
+
+    .header__nav {
+        position: absolute;
+        left: 0;
+        top: 61px;
+        z-index: 100;
+
+        align-items: flex-start;
+        width: auto;
+        height: calc(100vh - 60px);
+        background-color: #ffffff;
+        padding: 10px 20px 30px;
+        flex-direction: column;
+
+        transform: translateX(-100%);
+        transition: all .3s;
+
+        &.active {
+            transform: translateX(0);
+        }
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .header__nav-item {
+        margin: 25px 0 25px 20px;
+
+    }
+
+    .header__nav-link {
+        font-size: 16px;
+        color: #000;
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    .burger {
+        display: block;
     }
 
     .header-admin {
@@ -188,6 +351,10 @@
 
     .direction__table .admin-table__row {
         padding: 17px 90px 17px 40px;
+    }
+
+    .partners__item {
+        width: calc(100% / 3 - 8px);
     }
 }
 
@@ -311,44 +478,54 @@
     .pc-profile__info {
         font-size: 14px;
     }
+
     .user-page {
         .user-page__title {
             width: 100%;
             margin-bottom: 10px;
         }
+
         .statistics {
             margin-left: 0;
         }
     }
+
     .add-template__wrapper {
         flex-direction: column;
         padding-bottom: 0;
     }
+
     .add-template__input {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .add-template__input span {
         text-align: left;
         margin-bottom: 10px;
     }
+
     .user-page-v2 {
         .search-block {
             width: 100%;
             flex-wrap: wrap;
         }
+
         .create-account {
             margin-left: 0;
             margin-top: 20px;
         }
     }
+
     .user-page-v2 .search-block span {
         width: 100%;
         padding-bottom: 10px;
     }
+
     .admin-trans__wrap {
         flex-direction: column;
     }
+
     .admin-trans__wrap .filter-wrapper {
         margin-left: 0;
         margin: 20px 0 10px 0;
@@ -365,6 +542,89 @@
     .profile-main__btn {
         margin-left: 0;
         margin-right: auto;
+
+    .partners__inner {
+        background-color: #ffffff;
+        padding: 20px 5px 16px;
+    }
+
+    .title-main {
+        &::before {
+            width: 19px;
+            height: 3px;
+            left: -4px;
+        }
+
+        &::after {
+            width: 19px;
+            height: 3px;
+            right: -4px;
+        }
+
+        &.fz27 {
+            font-size: 19px;
+        }
+    }
+
+    .benefits__list {
+        flex-wrap: wrap;
+    }
+
+    .benefits__item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .benefits__info-title {
+        font-size: 16px;
+    }
+
+    .benefits__info-text {
+        font-size: 14px;
+    }
+
+    .benefits__num {
+        margin-right: 10px;
+        min-width: 17px;
+        height: 26px;
+    }
+
+    .main__btn--logo {
+        width: 233px;
+        height: 32px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 32px;
+
+        &::before {
+            top: 6px;
+        }
+    }
+
+    .main__btn-arrow-left,
+    .main__btn-arrow-right {
+        width: 30px;
+    }
+
+    .main__btn-arrow-left {
+        left: -50px;
+    }
+
+    .main__btn-arrow-right {
+        right: -50px;
+    }
+}
+
+@media(max-width:667px) {
+    .partners__item {
+        width: calc(100% / 2 - 8px);
+    }
+}
+
+@media(max-width:524px) {
+    .partners__item {
+        width: calc(100% - 8px);
     }
 }
 
@@ -409,13 +669,16 @@
             margin-left: 0;
         }
     }
+
     .user-page {
         .control-user {
             margin-left: 20px;
         }
     }
+
     .admin-trans .search-block {
         flex-wrap: wrap;
+
         span {
             width: 100%;
             padding-bottom: 10px;
@@ -431,11 +694,35 @@
             margin-left: 0;
         }
     }
-    .pc-trans {
-
-    }
     .pc-trans .search-block {
         flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 617px) {
+    .exchange__item {
+        margin: 5px 0;
+        padding-left: 0;
+    }
+
+    .exchange__top {
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+    }
+
+    .exchange__title {
+        width: 100%;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .exchange__tab {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .exchange__left {
+        margin-bottom: 70px;
     }
 }
 
@@ -496,17 +783,21 @@
         right: 10px;
         top: 10px;
     }
+
     .user-page {
         .statistics {
             width: 100%;
         }
+
         .control-user {
             margin-left: 0;
             margin-top: 10px;
         }
     }
+
     .admin-trans__filter {
         justify-content: space-between;
+
         .select-defolt {
             width: 48%;
             margin: 0 !important;
@@ -521,4 +812,14 @@
     .pc-trans .search-block input {
         width: 70%;
     }
-}
+
+    .main__btn-arrow-left,
+    .main__btn-arrow-right {
+        display: none;
+    }
+
+    .header__copy {
+        font-size: 10px;
+    }
+
+}}

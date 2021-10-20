@@ -22,10 +22,23 @@
     text-transform: uppercase;
     letter-spacing: 0.87px;
     color: #fff;
+
+    &:hover {
+        color: #fff;
+    }
 }
 
 .header__icon {
     margin-right: 21px;
+}
+
+
+.header__nav {
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .header__nav-list {
@@ -76,8 +89,10 @@
     &:hover {
         color: #d7c8c8;
 
-        &::before {
-            width: 100%;
+        @media(min-width:1023px) {
+            &::before {
+                width: 100%;
+            }
         }
     }
 }

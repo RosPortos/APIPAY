@@ -19,11 +19,18 @@
 }
 
 .partners__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: calc(100% / 6 - 8px);
-    padding: 21px 15px;
     margin: 4px;
 
     border-radius: 1px;
     border: 1px solid rgba(34, 35, 50, 0.18);
     background-color: #ffffff;
+
+    a {
+        display: block;
+        padding: 21px 15px;
+    }
 }

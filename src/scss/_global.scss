@@ -61,9 +61,11 @@ body {
         opacity: 0;
         transition: .1s ease-in;
     }
+
     .checkbox:checked {
         border: 1px solid #a0a0a0;
     }
+
     .checkbox:checked::before {
         opacity: 1;
     }
@@ -139,6 +141,7 @@ body {
     background-color: #00ad5d;
     margin-left: 17px;
     position: relative;
+
     &::before {
         position: absolute;
         content: '+';
@@ -161,6 +164,7 @@ body {
     position: relative;
     margin-left: auto;
     cursor: pointer;
+
     &::before {
         position: absolute;
         content: url('../img/statistics.png');

@@ -74,7 +74,7 @@
                                 <img class="exchange__img" src="img/brand/privat.png" loading="lazy" alt="img">
                                 Приват24 UAH
                             </buttom>
-                            <buttom class="exchange__item">
+                            <buttom class="exchange__item active">
                                 <img class="exchange__img" src="img/brand/raiff.png" loading="lazy" alt="img">
                                 Райффайзен RUB
                             </buttom>
@@ -123,7 +123,7 @@
                                 <img class="exchange__img" src="img/brand/avang.png" loading="lazy" alt="img">
                                 Банк Авангард RUB
                             </buttom>
-                            <buttom class="exchange__item">
+                            <buttom class="exchange__item active">
                                 <img class="exchange__img" src="img/brand/mir.png" loading="lazy" alt="img">
                                 МИР RUB
                             </buttom>
@@ -239,45 +239,102 @@
 
                     <ul class="partners__list">
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                         <li class="partners__item">
-                            <img src="img/partners.png" alt="">
+                            <a href="#">
+                                <img src="img/partners.png" alt="">
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
+
+        <div class="popup popup--registration">
+            <form class="popup__inner" action="/">
+                <span class="popup__close popup__close--registration"></span>
+                <h2 class="popup__title title-main fz27">Регистрация</h2>
+                <input class="popup__input payment__input" name="login" placeholder="Логин" type="text">
+                <input class="popup__input payment__input" name="password" placeholder="Пароль" type="password">
+                <input class="popup__input payment__input" name="email" placeholder="E-mail" type="text">
+                <input class="popup__input payment__input" name="tel" placeholder="Номер телефона" type="tel">
+                <button class="main__btn main__btn--logo popup__btn">подключится</button>
+            </form>
+        </div>
+
+        <div class="popup popup--authorization">
+            <form class="popup__inner" action="/">
+                <span class="popup__close popup__close--authorization"></span>
+                <h2 class="popup__title title-main fz27">Авторизация</h2>
+                <div class="popup__wrapper">
+                    <img class="popup__img" src="img/profile.png" alt="img">
+                    <input class="popup__input popup__input--password payment__input" name="login" type="text">
+                </div>
+                <div class="popup__wrapper">
+                    <img class="popup__img" src="img/key.png" alt="img">
+                    <input class="popup__input popup__input--password payment__input" name="password" type="password">
+                </div>
+                <div class="popup__box">
+                    <span class="">Забыли пароль?</span>
+                    <span class="popup__link-registration">Регистрация</span>
+                </div>
+
+                <button class="main__btn main__btn--header popup__btn">подключится</button>
+            </form>
+        </div>
 
         @include('partials/footer.html')
     </div>

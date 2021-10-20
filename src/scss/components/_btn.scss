@@ -58,13 +58,16 @@
         }
 
         &:hover {
-            .main__btn-arrow-left {
-                left: -55px;
+            @media(min-width:1023px) {
+                .main__btn-arrow-left {
+                    left: -55px;
+                }
+
+                .main__btn-arrow-right {
+                    right: -55px;
+                }
             }
 
-            .main__btn-arrow-right {
-                right: -55px;
-            }
         }
     }
 }
