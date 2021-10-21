@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html')
+
+        <section class="exchange exchange-two">
+            <div class="container">
+                <div class="exchange__inner">
+                    <div class="exchange__inner--wrap">
+                        <div class="exchange__left">
+                            <div class="exchange__top">
+                                <p class="exchange__title">ВЫ ОТДАЕТЕ</p>
+                            </div>
+                            <div class="exchange__content">
+                                <div class="exchange__block">
+                                    <div class="exchange__block--top">
+                                        <div class="exchange__block--currency">
+                                            <img loading="lazy" src="img/brand/qiwi.png" alt="img">
+                                            <span>QIWI RUB</span>
+                                        </div>
+                                        <div class="exchange__block--sum">
+                                            <span>Сумма:</span>
+                                            <input class="exchange__block--input" type="text">
+                                            <div>
+                                                min.: 1000 RUB, <br>
+                                                max.: 150000 RUB
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exchange__block--center">
+                                        <span>С кошелька:</span>
+                                        <input class="exchange__block--input" type="text">
+                                    </div>
+                                    <div class="exchange__block--bottom">
+                                        <span>Email:</span>
+                                        <input class="exchange__block--input" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange__right">
+                            <div class="exchange__top exchange__top--right">
+                                <p class="exchange__title">ВЫ ПОЛУЧАЕТЕ</p>
+                            </div>
+                            <div class="exchange__content">
+                                <div class="exchange__block">
+                                    <div class="exchange__block--top">
+                                        <div class="exchange__block--currency">
+                                            <img loading="lazy" src="img/brand/bitcoin.png" alt="img">
+                                            <span>Bitcoin BTC</span>
+                                        </div>
+                                        <div class="exchange__block--sum">
+                                            <span>Сумма:</span>
+                                            <input class="exchange__block--input" type="text">
+                                            <div>
+                                                min.: 1000 RUB, <br>
+                                                max.: 150000 RUB
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exchange__block--center">
+                                        <span>На адрес Bitcoin:</span>
+                                        <input class="exchange__block--input" type="text">
+                                    </div>
+                                    <div class="exchange__block--bottom">
+                                        <div class="exchange__block--check">
+                                            <input type="checkbox" class="checkbox">
+                                            <span>Запомнить введенные данные</span>
+                                        </div>
+                                        <button class="exchange__block--btn gradi-btn btn-hover2">
+                                            Обменять
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange__inner--text">
+                        Как обменять киви (QIWI) на биткоин (BTC)?<br>
+                        Для того, чтобы совершить обмен QIWI (RUB) на Bitcoin (BTC), вам необходимо пошагово сделать
+                        выполнить несложные
+                        действия:
+                        <br><br>
+                        На главной странице нужно заполнить пустые поля. В поле, где указывается, каким способом Вы
+                        хотите заплатить за обмен
+                        киви на биткоин, нужно выбрать логотип QIWI кошелька. Затем указать, какую сумму в рублях Вы
+                        хотите перевести с киви на
+                        биткоин. В графе с указанием криптовалюты Вам следует выбрать желтый значок биткоина. Затем
+                        нажать на кнопку «Обменять».
+                        После чего нужно заполнить пустые поля на следующей странице — укажите ваш эмейл адрес, и
+                        проверьте сумму средств,
+                        которые хотите обменять.<br>
+                        Далее следует изучить условия по оказанию услуг обменника киви на биткоин. В случае, если Вы
+                        согласны с условиями и
+                        готовы их принять, сделайте отметку об этом в соответствующем поле. Далее нажимайте кнопку
+                        «Обменять». Таким образом
+                        будет создана Ваша заявка на то, чтобы совершить обмен qiwi на биткоин.
+                        После этого Вам необходимо сделать оплату заявки на выставленные Вам реквизиты, в размере той
+                        суммы, которую Вы
+                        указывали ранее. Далее сделайте перевод с Qiwi кошелька суммы в рублях, необходимой для обмена
+                        qiwi на btc, в указанном
+                        Вами ранее размере. После того, как будет сделан перевод для того, чтобы вывести биткоины через
+                        киви, система
+                        автоматически перенаправит Вас на страницу состояния заявки. На ней Вы сможете отслеживать, на
+                        каком этапе находится
+                        созданная Вами заявка на перевод с киви на биткоин.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

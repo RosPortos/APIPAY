@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header.html')
+
+        <section class="exchange exchange-three">
+            <div class="container">
+                <div class="exchange__inner">
+                    <div class="exchange__status">
+                        <div class="exchange__status-title">
+                            <h2>ВНИМАНИЕ!</h2>
+                            Данная операция производится в автоматическом режиме 24/7 и занимает <span>3 минуты</span>
+                            после оплаты.
+                        </div>
+                        <div class="exchange__status-top">
+                            <div class="exchange__status-block">
+                                <div class="exchange__status-block--top">
+                                    <span>ВЫ ОТДАЕТЕ</span>
+                                    <div>
+                                        <img loading="lazy" src="img/brand/qiwi.png" alt="img">
+                                        <span>QIWI RUB</span>
+                                    </div>
+                                    <span>Сумма: 14 000 руб.</span>
+                                </div>
+                                <span>С кошелька: +38 098 433 3333</span>
+                            </div>
+                            <div class="exchange__status-block">
+                                <div class="exchange__status-block--top">
+                                    <span>ВЫ ПОЛУЧАЕТЕ</span>
+                                    <div>
+                                        <img loading="lazy" src="img/brand/bitcoin.png" alt="img">
+                                        <span>Bitcoin BTC</span>
+                                    </div>
+                                    <span>Сумма: 0,005</span>
+                                </div>
+                                <span>На адрес Bitcoin: 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee</span>
+                            </div>
+                        </div>
+                        <div class="exchange__status-center">
+                            Статус заявки №515151: <span>в ожидании</span>
+                        </div>
+                        <div class="exchange__status-info">
+                            <div>
+                                <span>Строго запрещено:</span> <br>
+                                1.Оплачивать с банкоматов и терминалов; <br>
+                                2.Совершать оплату 2-мя или более переводами; <br>
+                                3.Оплачивать заявку переводом ниже минимальной суммы;
+                            </div>
+                            <div>
+                                <span>ВНИМАНИЕ!</span> <br>
+                                Нажатие кнопки «Создать заявку» означает, что <br>
+                                вы принимаете все основные условия <br>
+                                Пользовательского соглашения.
+                            </div>
+                        </div>
+                        <div class="exchange__status-bottom">
+                            <div class="exchange__status-bottom-check">
+                                <input type="checkbox" class="checkbox">
+                                <span>С <a href="#">правилами сервиса</a> ознакомлен и согласен</span>
+                            </div>
+                        </div>
+                        <div class="exchange__status-btnwrap">
+                            <button class="exchange__status-btn">
+                                Отменить заявку
+                            </button>
+                            <button class="exchange__status-btn btn-hover2 gradi-btn">
+                                Оплатить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

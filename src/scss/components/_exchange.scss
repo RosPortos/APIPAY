@@ -164,3 +164,317 @@
 .exchange__right {
     padding-left: 40px;
 }
+
+.exchange__block {
+
+}
+
+.exchange__block--top {
+    display: flex;
+}
+
+.exchange__block--currency {
+    display: flex;
+    align-items: center;
+    span {
+        color: #222332;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.46px;
+        padding-left: 18px;
+    }
+}
+
+.exchange__block--sum {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    span {
+        color: #222332;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.46px;
+        padding-right: 15px;
+    }
+    input {
+        width: 136px;
+    }
+    div {
+        color: #222332;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.32px;
+        padding-left: 15px;
+    }
+}
+
+.exchange__block--input {
+    height: 33px;
+    border-radius: 2px;
+    border: 1px solid #e8e8e8;
+    padding: 0 10px;
+
+}
+
+
+
+.exchange__block--center {
+    margin-top: 24px;
+    span {
+        color: #222332;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.46px;
+        padding-right: 15px;
+    }
+    input {
+        width: 277px;
+    }
+}
+
+.exchange__block--bottom {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    span {
+        color: #222332;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.46px;
+        padding-right: 15px;
+    }
+    input {
+        width: 277px;
+    }
+}
+
+.exchange__block--check {
+    display: flex;
+    align-items: center;
+    input {
+        width: 19px;
+    }
+    span {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 0;
+        text-transform: none;
+    }
+}
+
+.exchange__block--btn {
+    width: 268px;
+    height: 49px;
+    margin-left: 22px;
+}
+
+.exchange-two {
+    .exchange__inner::before {
+        display: none;
+    }
+    .exchange__inner {
+        flex-direction: column;
+        padding: 25px 20px 40px;
+    }
+    .exchange__top {
+        margin-bottom: 40px;
+    }
+}
+
+.exchange__inner--wrap {
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    justify-content: space-between;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 384px;
+        background-color: #222332;
+        left: 50%;
+        bottom: 35px;
+        transform: translateX(-50%);
+        height: 111px;
+        bottom: 41px;
+    }
+}
+
+.exchange__inner--text {
+    color: #222332;
+    font-size: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.41px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e880;
+}
+
+.exchange-three {
+    .exchange__inner::after {
+        display: none;
+    }
+    .exchange__inner::before {
+        display: none;
+    }
+}
+
+.exchange__status {
+    width: 100%;
+}
+
+
+.exchange__status-title {
+    text-align: center;
+    h2 {
+        color: #222332;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 0.46px;
+        margin-bottom: 10px;
+    }
+    span {
+        color: #dd1212;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 0.46px;
+        margin-bottom: 10px;
+    }
+}
+
+.exchange__status-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 53px 0 40px 0;
+    border-bottom: 1px solid #e8e8e877;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url('../img/brand/exchange.png');
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.exchange__status-block {
+    span {
+        display: block;
+        &:last-child {
+            color: #222332;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.46px;
+            margin-top: 20px;
+        }
+    }
+}
+
+.exchange__status-block--top {
+    display: flex;
+    align-items: center;
+    span {
+        padding-right: 27px;
+        &:first-child {
+            color: #222332;
+            font-size: 22px;
+            font-weight: 600;
+            letter-spacing: 0.64px;
+        }
+        &:last-child {
+            color: #222332;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.46px;
+        }
+    }
+    div {
+        display: flex;
+        align-items: center;
+        span {
+            color: #222332;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.46px;
+            padding-left: 18px;
+        }
+    }
+}
+
+.exchange__status-center {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.52px;
+    padding: 36px 0;
+    text-align: center;
+    span {
+        color: #f78c1f;
+    }
+}
+
+.exchange__status-info {
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    div {
+        color: #3c3c3c;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.41px;
+        line-height: 19px;
+        span {
+            font-size: 16px;
+        }
+    }
+}
+
+.exchange__status-bottom {
+    margin-top: 38px;
+}
+
+.exchange__status-bottom-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    span {
+        color: #3c3c3c;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.41px;
+    }
+    a {
+        text-decoration: underline;
+        color: #3c3c3c;
+    }
+}
+
+
+.exchange__status-btnwrap {
+    display: flex;
+    justify-content: center;
+}
+
+.exchange__status-btn {
+    width: 268px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    &:first-child {
+        border-radius: 2px;
+        background-color: #f6f6f6;
+        color: #000000;
+        font-weight: 600;
+        margin-right: 25px;
+    }
+}
