@@ -165,9 +165,7 @@
     padding-left: 40px;
 }
 
-.exchange__block {
-
-}
+.exchange__block {}
 
 .exchange__block--top {
     display: flex;
@@ -176,6 +174,7 @@
 .exchange__block--currency {
     display: flex;
     align-items: center;
+
     span {
         color: #222332;
         font-size: 16px;
@@ -190,6 +189,7 @@
     display: flex;
     align-items: center;
     margin-left: 40px;
+
     span {
         color: #222332;
         font-size: 16px;
@@ -198,9 +198,11 @@
         letter-spacing: 0.46px;
         padding-right: 15px;
     }
+
     input {
         width: 136px;
     }
+
     div {
         color: #222332;
         font-size: 11px;
@@ -222,6 +224,7 @@
 
 .exchange__block--center {
     margin-top: 24px;
+
     span {
         color: #222332;
         font-size: 16px;
@@ -230,6 +233,7 @@
         letter-spacing: 0.46px;
         padding-right: 15px;
     }
+
     input {
         width: 277px;
     }
@@ -239,6 +243,7 @@
     margin-top: 24px;
     display: flex;
     align-items: center;
+
     span {
         color: #222332;
         font-size: 16px;
@@ -247,6 +252,7 @@
         letter-spacing: 0.46px;
         padding-right: 15px;
     }
+
     input {
         width: 277px;
     }
@@ -255,9 +261,11 @@
 .exchange__block--check {
     display: flex;
     align-items: center;
+
     input {
         width: 19px;
     }
+
     span {
         font-size: 14px;
         padding-left: 10px;
@@ -276,10 +284,12 @@
     .exchange__inner::before {
         display: none;
     }
+
     .exchange__inner {
         flex-direction: column;
         padding: 25px 20px 40px;
     }
+
     .exchange__top {
         margin-bottom: 40px;
     }
@@ -290,6 +300,7 @@
     position: relative;
     padding-bottom: 20px;
     justify-content: space-between;
+
     &::before {
         content: "";
         position: absolute;
@@ -318,6 +329,7 @@
     .exchange__inner::after {
         display: none;
     }
+
     .exchange__inner::before {
         display: none;
     }
@@ -330,6 +342,7 @@
 
 .exchange__status-title {
     text-align: center;
+
     h2 {
         color: #222332;
         font-size: 16px;
@@ -338,6 +351,7 @@
         letter-spacing: 0.46px;
         margin-bottom: 10px;
     }
+
     span {
         color: #dd1212;
         font-size: 16px;
@@ -354,6 +368,7 @@
     padding: 53px 0 40px 0;
     border-bottom: 1px solid #e8e8e877;
     position: relative;
+
     &::before {
         position: absolute;
         content: url('../img/brand/exchange.png');
@@ -365,6 +380,7 @@
 .exchange__status-block {
     span {
         display: block;
+
         &:last-child {
             color: #222332;
             font-size: 16px;
@@ -378,14 +394,17 @@
 .exchange__status-block--top {
     display: flex;
     align-items: center;
+
     span {
         padding-right: 27px;
+
         &:first-child {
             color: #222332;
             font-size: 22px;
             font-weight: 600;
             letter-spacing: 0.64px;
         }
+
         &:last-child {
             color: #222332;
             font-size: 16px;
@@ -393,9 +412,11 @@
             letter-spacing: 0.46px;
         }
     }
+
     div {
         display: flex;
         align-items: center;
+
         span {
             color: #222332;
             font-size: 16px;
@@ -414,6 +435,7 @@
     letter-spacing: 0.52px;
     padding: 36px 0;
     text-align: center;
+
     span {
         color: #f78c1f;
     }
@@ -424,12 +446,14 @@
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
+
     div {
         color: #3c3c3c;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.41px;
         line-height: 19px;
+
         span {
             font-size: 16px;
         }
@@ -445,12 +469,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+
     span {
         color: #3c3c3c;
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 0.41px;
     }
+
     a {
         text-decoration: underline;
         color: #3c3c3c;
@@ -470,6 +496,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 16px;
+
     &:first-child {
         border-radius: 2px;
         background-color: #f6f6f6;

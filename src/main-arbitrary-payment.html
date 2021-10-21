@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header-active.html')
+
+        <section class="exchange">
+            <div class="container">
+                <div class="exchange__inner main-payment">
+                    <h2 class="main-payment__title title fz18">Произвольный платеж</h2>
+                    <form class="main-payment__box" action="/">
+                        <div class="main-payment__wrapper">
+                            <div class="main-payment__item main-payment__item1">
+                                <p>Логин</p>
+                                <input class="payment__input main-payment__input" name="login" type="text">
+                            </div>
+                            <div class="main-payment__item main-payment__item2">
+                                <p>Сумма платежа</p>
+                                <input class="payment__input main-payment__input" name="sum" type="text">
+                            </div>
+                            <div class="main-payment__item main-payment__item3">
+                                <p>Выбор валют</p>
+                                <div class="select main-payment__input">
+                                    <div class="select__top">
+                                        <img class="select__top-icon" src="img/privat.png" alt="">
+                                        <span class="select__top-title">Privat24 UAH</span>
+                                    </div>
+                                    <div class="select__content">
+                                        <div class="select__input">
+                                            <input type="radio" name="select-radio">
+                                            <img src="img/privat.png" alt="">
+                                            <span class="select__item">Privat24 UAH</span>
+                                        </div>
+                                        <div class="select__input">
+                                            <input type="radio" name="select-radio">
+                                            <img src="img/privat.png" alt="">
+                                            <span class="select__item">Privat24 UAH</span>
+                                        </div>
+                                        <div class="select__input">
+                                            <input type="radio" name="select-radio">
+                                            <img src="img/privat.png" alt="">
+                                            <span class="select__item">Privat24 UAH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="main-payment__btn gradi-btn btn-hover2">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        @include('partials/footer.html')
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

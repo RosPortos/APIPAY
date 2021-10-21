@@ -96,3 +96,19 @@
         }
     }
 }
+
+.header-profile--main-payment {
+    position: relative;
+    z-index: 201;
+}
+
+.profile-main__btn--main-payment {
+    &::before {
+        background-color: #222332;
+    }
+
+}
+
+.profile__text--main-payment {
+    color: #fff;
+}
