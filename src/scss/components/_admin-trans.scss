@@ -72,6 +72,9 @@
     margin-top: 12px;
     .filter-wrapper {
         margin-left: auto;
+        .select-defolt::before {
+            top: 9px;
+        }
     }
 }
 

@@ -15,8 +15,8 @@
 <body>
     <div class="page">
         @include('partials/header-admin.html', {
-        "title": "Обмен валют",
-        "subtitle": "Пользователи",
+        "title": "Транзакции",
+        "subtitle": "",
         })
 
         @include('partials/admin-nav.html', {
@@ -34,17 +34,12 @@
         })
 
         <div class="page-content">
-            <section class="currencies admin-trans">
+            <section class="currencies admin-trans pc-trans">
                 <div class="currencies__wrapper">
                     <div class="currencies__top">
                         <h2 class="user-page__title title fz18">
                             Транзакции
                         </h2>
-                        <form class="search-block">
-                            <span>Найти транзакцию</span>
-                            <input type="text">
-                            <button class="search-block__btn gradi-btn">Найти</button>
-                        </form>
                     </div>
                     <div class="admin-trans__wrap">
                         <div class="admin-trans__filter">
@@ -61,19 +56,10 @@
                                     </option>
                                 </select>
                             </div>
-                            <div class="select-defolt ">
-                                <select>
-                                    <option value="">
-                                        Значение
-                                    </option>
-                                    <option value="">
-                                        Значение
-                                    </option>
-                                    <option value="">
-                                        Значение
-                                    </option>
-                                </select>
-                            </div>
+                            <form class="search-block">
+                                <input type="text" placeholder="Значения">
+                                <button class="search-block__btn gradi-btn">Найти</button>
+                            </form>
                             <div class="select-defolt all-type">
                                 <select>
                                     <option value="">
@@ -103,26 +89,25 @@
                         </div>
                         <form class="filter-wrapper" action="/">
                             <span class="filter__text">На странице:</span>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter" checked>
-                                <span class="filter__value">10</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">20</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">30</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">40</span>
-                            </label>
-                            <label class="filter__label">
-                                <input class="filter__input" type="radio" name="filter">
-                                <span class="filter__value">50</span>
-                            </label>
+                            <div class="select-defolt cancellation">
+                                <select>
+                                    <option value="">
+                                        10
+                                    </option>
+                                    <option value="">
+                                        20
+                                    </option>
+                                    <option value="">
+                                        30
+                                    </option>
+                                    <option value="">
+                                        40
+                                    </option>
+                                    <option value="">
+                                        50
+                                    </option>
+                                </select>
+                            </div>
                         </form>
                     </div>
                     <div class="admin-table user__table">
