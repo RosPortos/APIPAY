@@ -245,6 +245,24 @@
         }
     }
 
+    .main-payment__box2 {
+        flex-direction: column;
+    }
+
+    .payment-amount {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-payment__item4 {
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .main-payment__input2 {
+        margin: 15px 0 0 0;
+    }
+
 }
 
 @media (max-width: 940px) {
@@ -281,6 +299,7 @@
         z-index: 100;
 
         align-items: flex-start;
+        justify-content: flex-start;
         width: auto;
         height: calc(100vh - 60px);
         background-color: #ffffff;
@@ -751,6 +770,25 @@
 
     .exchange__status-top::before {
         top: 47%;
+    }
+}
+
+
+
+@media(max-width:553px) {
+    .main-payment__top {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .main-payment__sum {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .main-payment__info {
+        font-size: 14px;
     }
 }
 
