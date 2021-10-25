@@ -2,12 +2,15 @@
     .user-page__title {
         width: 100%;
     }
+
     .currencies__top {
         flex-wrap: wrap;
     }
+
     .search-block {
         width: 100%;
         margin-top: 18px;
+
         span {
             color: #222332;
             font-size: 14px;
@@ -16,52 +19,70 @@
             padding-right: 22px;
         }
     }
+
     .select-defolt.all-type {
         margin-left: 18px;
+        margin-right: 18px;
     }
+
+    /* 
     .select-defolt.cancellation {
         margin-left: 18px;
-    }
+
+        @media(max-width:566px) {}
+    } */
+
     .admin-table__row {
         padding: 17px 32px 17px 15px;
         min-width: 830px !important;
     }
+
     .admin-table__first {
         width: 80px;
     }
+
     .admin-table__two {
         width: 80px;
     }
+
     .admin-table__three {
-        width: 120px;
+        width: 450px;
     }
+
     .admin-table__four {
         width: 120px;
         text-align: center;
     }
+
     .admin-table__five {
         width: 40px;
         text-align: center;
     }
+
     .admin-table__six {
         width: 100px;
         text-align: center;
     }
+
     .admin-table__seven {
         width: 140px;
         text-align: center;
     }
+
     .admin-table__eight {
         width: 140px;
         text-align: center;
     }
+
     .admin-table__nine {
         width: 80px;
         text-align: center;
+
         &.green-text {
             color: #64af32;
         }
     }
+
     .user__table {
         margin-bottom: 20px;
     }
@@ -70,8 +91,10 @@
 .admin-trans__wrap {
     display: flex;
     margin-top: 12px;
+
     .filter-wrapper {
         margin-left: auto;
+
         .select-defolt::before {
             top: 9px;
         }
@@ -86,21 +109,136 @@
 
 .pc-trans {
     .search-block {
-        width: 148px;
+        width: auto;
         margin: 0;
+
         input {
-            width: 90px;
+            width: 93px;
             height: 100%;
             color: #000000;
             font-size: 12px;
             font-weight: 600;
             letter-spacing: 0.3px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            border-left: 1px solid rgba(#e8e8e8, .21);
+
             &::placeholder {
                 color: #000000;
             }
         }
+
         .search-block__btn {
             margin-left: 0;
+            min-width: 62px;
         }
+
+        .select-defolt {
+            min-width: 94px;
+            margin-right: 17px;
+            border-left: 1px solid rgba(#e8e8e8, .21);
+        }
+    }
+}
+
+.admin-trans__subtitle {
+    color: #222332;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+
+    margin-bottom: 16px;
+    margin-top: 26px;
+}
+
+.admin-table__nine {
+    display: flex;
+    min-width: 90px;
+    padding-left: 10px;
+}
+
+.admin-table__nine-btn {
+    position: relative;
+    display: block;
+    margin-left: 10px;
+    width: 14px;
+    height: 14px;
+
+    &.active {
+        .gear-img2 {
+            display: block;
+        }
+    }
+}
+
+.gear-img1 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.gear-img2 {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.gear__content {
+    display: none;
+    position: absolute;
+    top: 38px;
+    right: 2px;
+    z-index: 10;
+    padding: 8px 11px;
+
+    box-shadow: 0 2px 2px rgba(0, 1, 2, 0.06);
+    border-radius: 2px;
+    border: 1px solid #e8e8e8;
+    background-color: #ffffff;
+
+    p {
+        color: #000000;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.32px;
+
+        cursor: pointer;
+
+        border-top: 1px solid rgba(#e8e8e8, .45);
+
+
+        &:hover {
+            @media(min-width:1023px) {
+                text-decoration: underline;
+            }
+        }
+
+        &:first-child {
+            border-top: none;
+
+        }
+
+    }
+}
+
+.admin-table__new {
+    text-align: center;
+    width: 500px;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        height: 42px;
+        border-right: 1px dashed rgba(232, 232, 232, 0.35);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
     }
 }

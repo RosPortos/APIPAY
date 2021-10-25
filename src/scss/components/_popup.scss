@@ -38,7 +38,7 @@
 
 .popup__title {
     margin: 0 auto 21px;
-    max-width: 140px;
+    max-width: 210px;
 }
 
 .popup__input {
@@ -179,4 +179,8 @@
             }
         }
     }
+}
+
+.popup__text {
+    margin-bottom: 7px;
 }

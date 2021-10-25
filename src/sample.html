@@ -40,7 +40,17 @@
                         <span class="filter__text">Шаблоны</span>
                         <button class="sample__btn-big btn-hover2">Добавить шаблон</button>
                         <form class="search-block sample__form">
-                            <input class="sample__input" type="text" placeholder="Значение...">
+                            <div class="select-defolt">
+                                <select>
+                                    <option value="">
+                                        ID
+                                    </option>
+                                    <option value="">
+                                        Название
+                                    </option>
+                                </select>
+                            </div>
+                            <input class="sample__input sample__input-modern" type="text" placeholder="Значение...">
                             <button class="search-block__btn gradi-btn btn-hover2">Найти</button>
                         </form>
                     </div>
@@ -322,7 +332,7 @@
                     </div>
                 </div>
 
-                <div class="modal-add modal-add-temp">
+                <!-- <div class="modal-add modal-add-temp">
                     <button class="modal-add__closed"></button>
                     <div class="modal-add__title title fz12">
                         Добавить шаблон
@@ -390,14 +400,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </section>
-            <div class="sample-popup">
+            <div class="sample-popup sample-popup-change">
                 <div class="sample-popup__inner">
                     <div class="sample-popup__top">
                         <p class="sample-popup__title">Редактировать шаблон</p>
-                        <button class="sample-popup__close"></button>
+                        <button class="sample-popup__close sample-popup__close-change"></button>
                     </div>
                     <form class="sample-popup__bottom" action="/">
                         <div class="sample-popup__box">
@@ -410,7 +420,7 @@
                                 <input class="payment__input sample-popup__input" name="sum" type="text">
                             </div>
                             <div class="sample-popup__item sample-popup__item3">
-                                Примечание
+                                Название
                                 <input class="payment__input sample-popup__input" name="text" type="text">
                             </div>
                         </div>
@@ -418,7 +428,37 @@
                             <button class="payment__btn-big payment__btn--reset btn-hover2"
                                 type="reset">Очистить</button>
                             <button class="payment__btn-big payment__btn--submit btn-hover2"
-                                type="submit">Отправить</button>
+                                type="submit">Сохранить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="sample-popup sample-popup-add">
+                <div class="sample-popup__inner">
+                    <div class="sample-popup__top">
+                        <p class="sample-popup__title">Добавить шаблон</p>
+                        <button class="sample-popup__close sample-popup__close-add"></button>
+                    </div>
+                    <form class="sample-popup__bottom" action="/">
+                        <div class="sample-popup__box">
+                            <div class="sample-popup__item sample-popup__item1">
+                                Номер карты
+                                <input class="payment__input sample-popup__input" name="number" type="text">
+                            </div>
+                            <div class="sample-popup__item sample-popup__item2">
+                                Сумма
+                                <input class="payment__input sample-popup__input" name="sum" type="text">
+                            </div>
+                            <div class="sample-popup__item sample-popup__item3">
+                                Название
+                                <input class="payment__input sample-popup__input" name="text" type="text">
+                            </div>
+                        </div>
+                        <div class="payment-box__btn">
+                            <button class="payment__btn-big payment__btn--reset btn-hover2"
+                                type="reset">Очистить</button>
+                            <button class="payment__btn-big payment__btn--submit btn-hover2"
+                                type="submit">Сохранить</button>
                         </div>
                     </form>
                 </div>

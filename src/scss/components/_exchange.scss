@@ -470,6 +470,10 @@
     align-items: center;
     text-align: center;
 
+    input {
+        margin-right: 10px;
+    }
+
     span {
         color: #3c3c3c;
         font-size: 14px;
@@ -503,5 +507,22 @@
         color: #000000;
         font-weight: 600;
         margin-right: 25px;
+    }
+}
+
+.exchange-table {
+
+    .admin-table__first,
+    .admin-table__two {
+        &::before {
+            height: 56px;
+        }
+    }
+
+
+    .admin-table__three {
+        &::before {
+            display: none;
+        }
     }
 }

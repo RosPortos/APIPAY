@@ -280,6 +280,7 @@
     .nav {
         position: fixed;
         left: 0;
+        z-index: 307;
         transform: translateX(-100%);
         top: 56px;
         transition: all .3s;
@@ -633,13 +634,13 @@
         &::before {
             width: 19px;
             height: 3px;
-            left: -4px;
+            left: -25px;
         }
 
         &::after {
             width: 19px;
             height: 3px;
-            right: -4px;
+            right: -25px;
         }
 
         &.fz27 {
@@ -670,7 +671,8 @@
         height: 26px;
     }
 
-    .main__btn--logo {
+    .main__btn--logo,
+    .main__btn--password {
         width: 233px;
         height: 32px;
         color: #ffffff;
@@ -774,6 +776,12 @@
 }
 
 
+
+@media(max-width:635px) {
+    .sample__input-modern {
+        max-width: 140px;
+    }
+}
 
 @media(max-width:553px) {
     .main-payment__top {
@@ -1020,7 +1028,7 @@
     }
 
     .pc-trans .search-block {
-        width: 48%;
+        width: 81%;
     }
 
     .search-block__btn {

@@ -14,11 +14,39 @@
 }
 
 .payment__top {
+    display: flex;
     overflow: hidden;
     overflow-x: scroll;
     @include list-scroll;
 }
 
+.payment__top-left {
+    width: 100%;
+
+    .payment__list {
+        padding-right: 0;
+    }
+}
+
+.payment__top-right {
+    background-color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 36px 8px 0;
+
+    position: relative;
+
+    &::before {
+        content: '';
+        background-color: #e8e8e8;
+        height: 45px;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
 
 .payment__list {
     display: flex;

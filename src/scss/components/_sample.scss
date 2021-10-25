@@ -52,6 +52,25 @@
 
 .sample__form {
     margin-left: 27px;
+
+    .select-defolt {
+        height: 27px;
+        min-width: 71px;
+        border-right: 1px solid #e8e8e8;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+
+        select {
+            height: 27px;
+
+        }
+    }
+}
+
+.sample__input-modern {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    max-width: 200px;
 }
 
 

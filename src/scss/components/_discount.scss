@@ -2,14 +2,28 @@
     margin-bottom: 15px;
 }
 
+.list__titles-discount {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.49px;
+}
+
 .discount__list {
     overflow-x: hidden;
+    color: #000000;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.49px;
+
+    border-bottom: none;
 }
 
 .discount__item1 {
     width: 185px;
+    border-right: 1px dashed #e8e8e8;
 }
 
 .discount__item2 {
     width: 137px;
+    border-right: none;
 }
