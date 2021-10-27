@@ -37,68 +37,137 @@
         <div class="page-content">
             <section class="currencies admin-trans">
                 <div class="currencies__wrapper">
-                    <div class="currencies__top">
+                    <div class="currencies__top2">
                         <h2 class="user-page__title title fz18">
                             Выводы
                         </h2>
-                        <form class="search-block">
-                            <span>Найти запрос</span>
-                            <input type="text">
-                            <button class="search-block__btn gradi-btn">Найти</button>
+                        <form class="currencies__filter" action="">
+                            <div class="select-defolt">
+                                <select>
+                                    <option value="">
+                                        ID
+                                    </option>
+                                    <option value="">
+                                        Реквизиты
+                                    </option>
+                                    <option value="">
+                                        Аккаунт
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="currencies__search">
+                                <input class="currencies__input" type="text" placeholder="Значения">
+                                <button class="search-block__btn gradi-btn">Найти</button>
+                            </div>
+                            <div class="select-defolt all-type">
+                                <select>
+                                    <option value="">
+                                        Easypay
+                                    </option>
+                                    <option value="">
+                                        Global24
+                                    </option>
+                                    <option value="">
+                                        Cash-in
+                                    </option>
+                                    <option value="">
+                                        Visa/Mc
+                                    </option>
+                                    <option value="">
+                                        Kuna
+                                    </option>
+                                    <option value="">
+                                        BTC
+                                    </option>
+                                    <option value="">
+                                        USDT
+                                    </option>
+                                    <option value="">
+                                        ETH
+                                    </option>
+                                    <option value="">
+                                        LTC
+                                    </option>
+                                    <option value="">
+                                        XRP
+                                    </option>
+                                    <option value="">
+                                        TRX
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="select-defolt cancellation">
+                                <select>
+                                    <option value="">
+                                        Завершен
+                                    </option>
+                                    <option value="">
+                                        Отменен
+                                    </option>
+                                    <option value="">
+                                        Приостановлен
+                                    </option>
+                                </select>
+                            </div>
                         </form>
                     </div>
-                    <div class="admin-table user__table">
-                        <div class="admin-table__row row-title">
-                            <div class="admin-table__first">
+
+                    <div class="list-wrapper">
+                        <div class="list list__titles">
+                            <div class="list__item list__item1 list__title">
                                 ID
                             </div>
-                            <div class="admin-table__two">
+                            <div class="list__item list__item2 list__title">
                                 Дата
                             </div>
-                            <div class="admin-table__four">
+                            <div class="list__item list__item4 list__title">
                                 Аккаунт
                             </div>
-                            <div class="admin-table__new">
+                            <div class="list__item list__item2 list__title">
+                                Валюта
+                            </div>
+                            <div class="list__item list__item3 list__title">
                                 Реквизиты
                             </div>
-
-                            <div class="admin-table__five">
-                                ПС
+                            <div class="list__item list__item4 list__title">
+                                Отдаю
                             </div>
-                            <div class="admin-table__six">
-                                Сумма
+                            <div class="list__item list__item4 list__title">
+                                Получаю
                             </div>
-                            <div class="admin-table__eight">
-                                Сумма клиента
+                            <div class="list__item list__item4 list__title">
+                                Курс
                             </div>
-                            <div class="admin-table__nine">
+                            <div class="list__item list__item5 list__title">
                                 Статус
                             </div>
                         </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
                             </div>
-                            <div class="admin-table__two">
-                                18.08.2021
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
                             </div>
-                            <div class="admin-table__four">
-                                mrvintage
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
                             </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            <div class="list__item list__item2">
+                                Global24
                             </div>
-                            <div class="admin-table__five">
-                                -
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
                             </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
                             </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
                             </div>
-                            <div class="admin-table__nine green-text">
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
                                 Новый
                                 <button class="admin-table__nine-btn">
                                     <img class="gear-img1" src="img/gear.png" alt="">
@@ -111,142 +180,32 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
                             </div>
-                            <div class="admin-table__two">
-                                18.08.2021
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
                             </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
                             </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            <div class="list__item list__item2">
+                                Global24
                             </div>
-                            <div class="admin-table__five">
-                                -
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
                             </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
                             </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
                             </div>
-                            <div class="admin-table__nine green-text">
-                                Новый
-                                <button class="admin-table__nine-btn">
-                                    <img class="gear-img1" src="img/gear.png" alt="">
-                                    <img class="gear-img2" src="img/gear-color.png" alt="">
-                                </button>
-                                <div class="gear__content">
-                                    <p>Завершен</p>
-                                    <p>Отменен</p>
-                                    <p>Приостановлен</p>
-                                </div>
+                            <div class="list__item list__item4">
+                                <span>4757</span>
                             </div>
-                        </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
-                            </div>
-                            <div class="admin-table__two">
-                                18.08.2021
-                            </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
-                            </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
-                            </div>
-                            <div class="admin-table__five">
-                                -
-                            </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
-                            </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
-                            </div>
-                            <div class="admin-table__nine green-text">
-                                Новый
-                                <button class="admin-table__nine-btn">
-                                    <img class="gear-img1" src="img/gear.png" alt="">
-                                    <img class="gear-img2" src="img/gear-color.png" alt="">
-                                </button>
-                                <div class="gear__content">
-                                    <p>Завершен</p>
-                                    <p>Отменен</p>
-                                    <p>Приостановлен</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
-                            </div>
-                            <div class="admin-table__two">
-                                18.08.2021
-                            </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
-                            </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
-                            </div>
-                            <div class="admin-table__five">
-                                -
-                            </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
-                            </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
-                            </div>
-                            <div class="admin-table__nine green-text">
-                                Новый
-                                <button class="admin-table__nine-btn">
-                                    <img class="gear-img1" src="img/gear.png" alt="">
-                                    <img class="gear-img2" src="img/gear-color.png" alt="">
-                                </button>
-                                <div class="gear__content">
-                                    <p>Завершен</p>
-                                    <p>Отменен</p>
-                                    <p>Приостановлен</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
-                            </div>
-                            <div class="admin-table__two">
-                                18.08.2021
-                            </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
-                            </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
-                            </div>
-                            <div class="admin-table__five">
-                                -
-                            </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
-                            </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
-                            </div>
-                            <div class="admin-table__nine green-text">
+                            <div class="list__item list__item5">
                                 Завершен
                                 <button class="admin-table__nine-btn">
                                     <img class="gear-img1" src="img/gear.png" alt="">
@@ -259,31 +218,70 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
                             </div>
-                            <div class="admin-table__two">
-                                18.08.2021
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
                             </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
                             </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            <div class="list__item list__item2">
+                                Global24
                             </div>
-                            <div class="admin-table__five">
-                                -
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
                             </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
                             </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
                             </div>
-                            <div class="admin-table__nine green-text">
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
+                                Новый
+                                <button class="admin-table__nine-btn">
+                                    <img class="gear-img1" src="img/gear.png" alt="">
+                                    <img class="gear-img2" src="img/gear-color.png" alt="">
+                                </button>
+                                <div class="gear__content">
+                                    <p>Завершен</p>
+                                    <p>Отменен</p>
+                                    <p>Приостановлен</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                Global24
+                            </div>
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
                                 Завершен
                                 <button class="admin-table__nine-btn">
                                     <img class="gear-img1" src="img/gear.png" alt="">
@@ -296,31 +294,70 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
                             </div>
-                            <div class="admin-table__two">
-                                18.08.2021
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
                             </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
                             </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            <div class="list__item list__item2">
+                                Global24
                             </div>
-                            <div class="admin-table__five">
-                                -
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
                             </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
                             </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
                             </div>
-                            <div class="admin-table__nine green-text">
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
+                                Новый
+                                <button class="admin-table__nine-btn">
+                                    <img class="gear-img1" src="img/gear.png" alt="">
+                                    <img class="gear-img2" src="img/gear-color.png" alt="">
+                                </button>
+                                <div class="gear__content">
+                                    <p>Завершен</p>
+                                    <p>Отменен</p>
+                                    <p>Приостановлен</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                Global24
+                            </div>
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
                                 Завершен
                                 <button class="admin-table__nine-btn">
                                     <img class="gear-img1" src="img/gear.png" alt="">
@@ -333,31 +370,146 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="admin-table__row">
-                            <div class="admin-table__first">
-                                14523
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
                             </div>
-                            <div class="admin-table__two">
-                                18.08.2021
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
                             </div>
-
-                            <div class="admin-table__four">
-                                mrvintage
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
                             </div>
-                            <div class="admin-table__new">
-                                Рублевый счет - 1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee
+                            <div class="list__item list__item2">
+                                Global24
                             </div>
-                            <div class="admin-table__five">
-                                -
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
                             </div>
-                            <div class="admin-table__six">
-                                15 050 руб.
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
                             </div>
-
-                            <div class="admin-table__eight">
-                                14 500 руб.
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
                             </div>
-                            <div class="admin-table__nine green-text">
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
+                                Новый
+                                <button class="admin-table__nine-btn">
+                                    <img class="gear-img1" src="img/gear.png" alt="">
+                                    <img class="gear-img2" src="img/gear-color.png" alt="">
+                                </button>
+                                <div class="gear__content">
+                                    <p>Завершен</p>
+                                    <p>Отменен</p>
+                                    <p>Приостановлен</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                Global24
+                            </div>
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
+                                Завершен
+                                <button class="admin-table__nine-btn">
+                                    <img class="gear-img1" src="img/gear.png" alt="">
+                                    <img class="gear-img2" src="img/gear-color.png" alt="">
+                                </button>
+                                <div class="gear__content">
+                                    <p>Завершен</p>
+                                    <p>Отменен</p>
+                                    <p>Приостановлен</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                Global24
+                            </div>
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
+                                Новый
+                                <button class="admin-table__nine-btn">
+                                    <img class="gear-img1" src="img/gear.png" alt="">
+                                    <img class="gear-img2" src="img/gear-color.png" alt="">
+                                </button>
+                                <div class="gear__content">
+                                    <p>Завершен</p>
+                                    <p>Отменен</p>
+                                    <p>Приостановлен</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list__item list__item1">
+                                <span>14523</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                <span>18.08.2021</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>mrvintage</span>
+                            </div>
+                            <div class="list__item list__item2">
+                                Global24
+                            </div>
+                            <div class="list__item list__item3">
+                                <span>1BQ9qza7fn9snSCyJQB3ZcN46biBtkt4ee </span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>14 500 руб.</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>0,020</span>
+                            </div>
+                            <div class="list__item list__item4">
+                                <span>4757</span>
+                            </div>
+                            <div class="list__item list__item5">
                                 Завершен
                                 <button class="admin-table__nine-btn">
                                     <img class="gear-img1" src="img/gear.png" alt="">

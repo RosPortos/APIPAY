@@ -1,4 +1,5 @@
 .list-wrapper {
+    overflow-y: hidden;
     overflow-x: scroll;
     @include list-scroll;
 }
@@ -17,6 +18,17 @@
 
     &:last-child {
         border: none;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2),
+    &:nth-last-child(3) {
+        .list__item5 {
+            .gear__content {
+                top: unset;
+                bottom: 38px;
+            }
+        }
     }
 }
 
@@ -61,6 +73,7 @@
 .list__item5 {
     min-width: 135px;
     border: none;
+    position: relative;
 }
 
 .list__status {
