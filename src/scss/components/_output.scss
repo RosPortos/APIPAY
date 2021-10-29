@@ -1,6 +1,10 @@
 .output-section {
     display: flex;
     flex-direction: column;
+
+    .fast-select {
+        width: 135px;
+    }
 }
 
 .output__top {

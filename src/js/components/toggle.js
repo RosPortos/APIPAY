@@ -34,6 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleFadeItem('.popup__close--password', '.popup--password', 400);
     toggleFadeItem('.sample__btn-big', '.sample-popup-add', 400);
     toggleFadeItem('.sample-popup__close-add', '.sample-popup-add', 400);
+    closeFadeItem('.modal-add__closed--add', '.modal-bg--add', 400);
+    toggleFadeItem('.btn-add', '.modal-bg--add', 400);
+    closeFadeItem('.modal-add__closed--change', '.modal-bg--change', 400);
+    toggleFadeItem('.table-edit', '.modal-bg--change', 400);
+
 
     $('.admin-table__nine-btn').on('click', function () {
         $(this).siblings(".gear__content").fadeToggle(300);

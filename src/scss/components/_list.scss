@@ -2,6 +2,7 @@
     overflow-y: hidden;
     overflow-x: scroll;
     @include list-scroll;
+    margin-bottom: 20px;
 }
 
 .list {

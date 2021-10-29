@@ -27,15 +27,16 @@ function closedClick(wrap, item, method) {
 closedClick('.header-profile', '.profile__content', slideUp);
 closedClick('.sample-popup__inner', '.sample-popup', fadeOut);
 closedClick('.popup', '.popup', fadeOut);
+closedClick('.modal-add', '.modal-bg', fadeOut);
 
 $('.custum-check__input').on('click', function () { $(this).toggleClass('active'); });
 
-
+/* 
 $('.modal-add__closed, .overley').on('click', function () {
     $('.modal-add').css('display', 'none');
     $('.currencies__wrapper, .output__middle').css('display', 'block');
     $('.overley').fadeOut(400);
-});
+}); */
 
 
 function select() {

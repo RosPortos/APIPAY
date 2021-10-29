@@ -550,7 +550,7 @@
 
     .pc-profile__btn {
         display: block;
-        margin: 0 auto;
+        margin: 20px auto 45px;
     }
 
     .pc-profile__info {
@@ -821,10 +821,6 @@
         width: 100%;
     }
 
-    .modal-add {
-        padding: 15px;
-    }
-
     .modal-add__bottom--wrap {
         flex-direction: column;
     }
@@ -996,11 +992,12 @@
         padding: 0;
     }
 
+    /* 
     .modal-add {
         padding-top: 35px;
         margin: 0 -15px;
         width: auto;
-    }
+    } */
 
     .modal-add__closed {
         right: 10px;
