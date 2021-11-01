@@ -83,12 +83,12 @@ function select() {
 
 select();
 
-$('.btn-add-template, .create-account').on('click', function () {
-    $('.add-template').fadeIn(400);
+$('.btn-add-template, .create-account, .read-more').on('click', function () {
+    $('.add-template, .applic-modal').fadeIn(400);
     $('.overley').fadeIn(400);
 });
 
-$('.add-template__closed, .overley').on('click', function () {
-    $('.add-template').fadeOut(400);
+$('.add-template__closed, .overley, .applic-modal__closed').on('click', function () {
+    $('.add-template, .applic-modal').fadeOut(400);
     $('.overley').fadeOut(400);
 });

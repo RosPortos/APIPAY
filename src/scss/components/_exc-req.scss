@@ -12,10 +12,12 @@
             margin-right: 0;
             margin-left: 18px;
             position: relative;
+            cursor: pointer;
             &::before {
                 position: absolute;
                 content: url('../img/information.png');
                 left: -15px;
+                top: 2px;
             }
         }
         span {

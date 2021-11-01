@@ -1,0 +1,46 @@
+.applic-modal {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 500;
+    display: none;
+}
+
+.applic-modal__closed {
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    cursor: pointer;
+    &::before {
+        content: url('../img/close.png');
+    }
+}
+
+.applic-modal__title {
+    width: 100%;
+    background-color: #e8e8e841;
+    padding: 15px 20px;
+}
+
+
+.applic-modal__wrapper {
+    padding: 15px 20px;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #e8e8e883;
+        &:last-child {
+            border-bottom: 0;
+        }
+        span {
+            color: #000000;
+            font-weight: 400;
+            letter-spacing: 0.52px;
+        }
+    }
+
+}
