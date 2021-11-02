@@ -92,3 +92,33 @@ $('.add-template__closed, .overley, .applic-modal__closed').on('click', function
     $('.add-template, .applic-modal').fadeOut(400);
     $('.overley').fadeOut(400);
 });
+
+$('.edit, .edit-show').on('click', function () {
+    $('.edit-user').fadeIn(400);
+    $('.overley').fadeIn(400);
+});
+
+$('.edit-user__closed, .overley').on('click', function () {
+    $('.edit-user').fadeOut(400);
+    $('.overley').fadeOut(400);
+});
+
+$('.btn-add-exchange').on('click', function () {
+    $('.modal-add-popup, .search-modal').fadeIn(400);
+    $('.overley').fadeIn(400);
+});
+
+$('.modal-add__closed, .overley').on('click', function () {
+    $('.modal-add-popup').fadeOut(400);
+    $('.overley').fadeOut(400);
+});
+
+$('.search-modal-show').on('click', function () {
+    $('.search-modal').fadeIn(400);
+    $('.overley').fadeIn(400);
+});
+
+$('.overley, .search-modal__closed').on('click', function () {
+    $('.search-modal').fadeOut(400);
+    $('.overley').fadeOut(400);
+});

@@ -15,20 +15,20 @@
 <body>
     <div class="page">
         @include('partials/header-admin.html', {
-        "title": "Обмен валют",
-        "subtitle": "Валюты",
+        "title": "Валюты",
+        "subtitle": "",
         })
 
         @include('partials/admin-nav.html', {
         "link-admin1": "",
         "link-admin2": "",
         "link-admin3": "",
-        "link-admin4": "",
+        "link-admin4": "nav__link--active",
         "link-admin5": "",
-        "link-admin6": "nav__link--active",
+        "link-admin6": "",
         "sublink-admin1": "",
         "sublink-admin3": "",
-        "sublink-admin4": "submenu__link--active",
+        "sublink-admin4": "",
         "sublink-admin5": "",
         "sublink-admin6": "",
         "sublink-admin7": "",
@@ -284,22 +284,6 @@
                             <span>Код валюты</span>
                             <input type="text">
                         </div>
-                        <div class="modal-add__input">
-                            <span>Резерв</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Количество знаков после запятой</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Метка</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Платежные реквизиты</span>
-                            <input type="text">
-                        </div>
                         <div class="modal-add__input modal-add__select">
                             <span>Валидатор реквизитов</span>
                             <div class="select">
@@ -322,22 +306,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="modal-add__input input-file">
-                            <span>Иконки</span>
-                            <input type="file">
-                            <button class="input-file__btn"></button>
+                        <div class="modal-add__input">
+                            <span>Количество знаков после запятой</span>
+                            <input type="text">
                         </div>
                         <div class="modal-add__input">
                             <span>Название</span>
                             <input type="text">
                         </div>
-                        <div class="modal-add__input">
-                            <span>Название поля на странице обмена</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Подсказка для поля на страние обмена</span>
-                            <input type="text">
+                        <div class="modal-add__input input-file">
+                            <span>Иконки</span>
+                            <input type="file">
+                            <button class="input-file__btn"></button>
                         </div>
                         <div class="modal-add__bottom">
                             <div class="custum-check">
@@ -397,18 +377,6 @@
                             <span>Количество знаков после запятой</span>
                             <input type="text">
                         </div>
-                        <!-- <div class="modal-add__input">
-                            <span>Метка</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Платежные реквизиты</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Валидатор реквизитов</span>
-                            <input type="text">
-                        </div> -->
                         <div class="modal-add__input">
                             <span>Название</span>
                             <input type="text">
@@ -418,15 +386,6 @@
                             <input type="file">
                             <button class="input-file__btn"></button>
                         </div>
-                        <!-- 
-                        <div class="modal-add__input">
-                            <span>Название поля на странице обмена</span>
-                            <input type="text">
-                        </div>
-                        <div class="modal-add__input">
-                            <span>Подсказка для поля на страние обмена</span>
-                            <input type="text">
-                        </div> -->
                         <div class="modal-add__bottom">
                             <div class="custum-check">
                                 <span class="custum-check__text">

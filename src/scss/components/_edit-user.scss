@@ -1,0 +1,114 @@
+.edit-user {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    z-index: 300;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.edit-user__closed {
+    position: absolute;
+    right: 16px;
+    top: 13px;
+    cursor: pointer;
+    &::before {
+        content: url('../img/close.png');
+    }
+}
+
+.edit-user__title {
+    width: 100%;
+    background-color: #e8e8e841;
+    padding: 15px 20px;
+}
+
+.edit-user__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 20px;
+    row-gap: 25px;
+}
+
+.edit-user__input {
+    width: 48%;
+    input {
+        width: 100%;
+        margin-right: 17px;
+        height: 37px;
+        padding: 10px;
+        border-radius: 2px;
+        border: 1px solid #e8e8e8;
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: 0.52px;
+        &::placeholder {
+            color: #a0a0a0;
+            font-weight: 600;
+            letter-spacing: 0.52px;
+        }
+    }
+    button {
+        position: absolute;
+        height: 37px;
+        width: 50px;
+        background-color: #e8e8e8;
+        &::before {
+            content: url('../img/passkey.png');
+            transform: scale(0.8);
+        }
+    }
+    &.input-token {
+        input {
+            padding-left: 60px;
+        }
+    }
+    &.pointer-non {
+        input {
+            pointer-events: none;
+            background-color: #e8e8e8;
+        }
+    }
+}
+
+.edit-user__input--title {
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.52px;
+    margin-bottom: 10px;
+    span {
+        padding-right: 5px;
+    }
+}
+
+.edit-user__check {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    span {
+        color: #000000;
+        font-weight: 600;
+        letter-spacing: 0.52px;
+        padding-left: 10px;
+    }
+}
+
+.edit-user__btn {
+    margin: 20px;
+    width: 130px;
+    height: 40px;
+    background-color: #bedbc0;
+    border-radius: 5px;
+    color: #319e36;
+    font-weight: 600;
+    letter-spacing: 0.52px;
+    transition: all .3s;
+    &:hover {
+        background-color: #a4daa7;
+    }
+}
