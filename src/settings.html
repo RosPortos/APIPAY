@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="page">
+        @include('partials/header-admin.html', {
+        "title": "Настройка",
+        "subtitle": "",
+        })
+
+        @include('partials/admin-nav.html', {
+        "link-admin1": "",
+        "link-admin2": "",
+        "link-admin3": "",
+        "link-admin4": "",
+        "link-admin5": "",
+        "link-admin6": "nav__link--active",
+        "sublink-admin1": "",
+        "sublink-admin3": "",
+        "sublink-admin4": "",
+        "sublink-admin5": "",
+        "sublink-admin6": "",
+        "sublink-admin7": "submenu__link--active",
+        "link-admin7": "",
+        })
+
+
+        <div class="page-content">
+
+            <section class="currencies">
+                <div class="currencies__wrapper">
+                    <div class="currencies__top">
+                        <h2 class="currencies__title title fz18">
+                            Настройка социальной информации
+                        </h2>
+                    </div>
+                    <div class="settings">
+                        <div class="settings__wrapper">
+                            <div class="settings__input">
+                                <span>Название проекта</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Электронная почта</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Номер телефона</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Telegram</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Skype</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Viber</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>WhatsApp</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Messenger</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Discord</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Snapchat</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Вконтакте</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Одноклассники</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Facebook</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Twitter</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>YouTube</span>
+                                <input type="text">
+                            </div>
+                            <div class="settings__input">
+                                <span>Instagram</span>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <button class="settings__btn">
+                            Сохранить
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+
+        <div class="overley"></div>
+
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

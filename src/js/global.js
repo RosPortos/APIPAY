@@ -104,7 +104,7 @@ $('.edit-user__closed, .overley').on('click', function () {
 });
 
 $('.btn-add-exchange').on('click', function () {
-    $('.modal-add-popup, .search-modal').fadeIn(400);
+    $('.modal-add-popup').fadeIn(400);
     $('.overley').fadeIn(400);
 });
 
